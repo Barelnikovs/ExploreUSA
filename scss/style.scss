@@ -1,0 +1,99 @@
+$header-color: #143434;
+$white-text: #fff;
+$black-text: #000;
+
+* {
+    margin: 0;
+    padding: 0;
+}
+.header {
+    background-color: $header-color;
+    height: 9svh;
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+    &__burgerMenu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__burger {
+        position: relative;
+        height: 3svh;
+        width: 3.2svh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        span, &::before, &::after {
+            position: absolute;
+            height: 12%;
+            width: 100%;
+            background-color: #fff;
+        }
+        &::before, &::after {
+            content: "";
+        }
+        &::before {
+            top: 0.2svh;
+        }
+        &::after {
+            bottom: 0.2svh;
+        }
+    }
+    &__logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+            margin: 3px;
+            width: 6svh;
+            height: 6svh;
+        }
+        span {
+            color: $white-text;
+            font-size: 3.5svh;
+            font-family: Arial, Helvetica, sans-serif;
+            letter-spacing: 0.5px;
+        }
+    }
+    &__search {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+            width: 4svh;
+            height: 4svh;
+        }
+    }
+}
+.container {
+    .banner {
+        height: 35svh;
+        background-image: url(/image/banner/bg-md.png);
+        background-size: 130%;
+        background-position: 50% 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &__search {
+            outline: none;
+            border: none;
+            background: #ffffffad;
+            backdrop-filter: blur(5px);
+            border-radius: 3px;
+            height: 40px;
+            width: 70%;
+            color: #000;
+            padding: 0 16px;
+        }
+    }
+    .selectCity {
+        h1 {
+            font-size: 25px;
+            margin: 30px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        &__city {
+
+        }
+    }
+}
