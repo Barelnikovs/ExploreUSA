@@ -1,10 +1,12 @@
 $header-color: #143434;
+$footer-color: #0d2323;
 $white-text: #fff;
 $black-text: #000;
 
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 .header {
     background-color: $header-color;
@@ -92,8 +94,123 @@ $black-text: #000;
             margin: 30px;
             font-family: Arial, Helvetica, sans-serif;
         }
+        &__sorting {
+            margin: 0 20px 20px;
+            display: flex;
+            p {
+                margin-right: 10px;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+        }
+        &__cities {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            margin: 0 10px;
+        }
         &__city {
-
+            margin: 0 0 1.5svh 10px;
+            a {
+                display: flex;
+                align-items: center;
+                text-decoration: none;
+                color: $black-text;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 0.9rem;
+            }
+        }
+        &__flag {
+            margin-right: 10px;
+            height: 40px;
+            width: 40px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 1px solid #000;
+        }
+    }
+}
+.footer {
+    background-color: $footer-color;
+    border-top: 3px solid #9e9e9e;
+    color: $white-text;
+    margin-top: 150px;
+    padding-bottom: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    &__logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 10px;
+        margin: 30px 0;
+        img {
+            height: 6svh;
+            margin: 0 7px;
+        }
+        p {
+            margin: 0 7px; 
+            font-size: 1.2rem;
+            font-weight: bold;
+            letter-spacing: 0.5px;
+            
+        }
+    }
+    &__nav {
+        display: flex;
+        justify-content: center;
+        padding: 0 45px;
+        margin-bottom: 30px;
+        flex-wrap: wrap;
+        p {
+            margin: 5px 10px;
+            cursor: pointer;
+        }
+    }
+    &__info {
+        padding: 0 45px;
+        p {
+            font-size: 0.8rem;
+            text-align: center;
+            color: #c4c4c4;
+            opacity: 80%;
+        }
+    }
+}
+.searchHiddenBlock {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    padding: 0 5%;
+    left: 0;
+    top: 0;
+    background-color: #fff;
+    z-index: 1;
+    height: 9svh;
+    width: 100vw;
+    input {
+        height: 6svh;
+        width: 60%;
+        outline: none;
+        border: none;
+        background: transparent;
+        font-size: 3.7svh;
+    }
+    div {
+        position: relative;
+        border: 1px solid red;
+        height: 5svh;
+        width: 5svh;
+        &::before, &::after {
+            content: '';
+            position: absolute;
+            height: 12%;
+            width: 100%;
+            background-color: #000;
+        }
+        &::before {
+            top: 0;
+        }
+        &::after {
+            bottom: 0;
         }
     }
 }
