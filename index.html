@@ -3,14 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Исследуйте увлекательный мир городов США! Узнайте о культуре, достопримечательностях, истории и жизни в каждом уголке страны. Путеводители, советы по путешествиям и уникальные факты о самых известных и скрытых жемчужинах Америки.">
     <title>Explore USA main</title>
+    <link rel="icon" type="image/png" href="/image/favicon.png">
     <link rel="stylesheet" href="./css/style.css">
+    <script defer src="./js/script.js"></script>
 </head>
-<body>
+<body">
     <div class="wrapper">
         <header class="header">
             <div class="header__burgerMenu">
-                <div class="header__burger">
+                <div class="header__burger" id="burgerMenu">
                     <span></span>
                 </div>
             </div>
@@ -31,24 +34,26 @@
                     <img class="airplainIcon" src="./image/navigation/airplane-svgrepo-com.svg" alt="иконка самолёта">
                     <a href="">Авиабилеты</a>
                 </div>
-                <div class="header__navCross"></div>
+                <div id="navigationCross" class="header__navCross"></div>
             </nav>
             <div class="header__logo">
-                <img src="/image/logo/logo-sm-size.png" alt="logo">
-                <span>Explore USA</span>
+                <a href="/index.html">
+                    <img src="/image/logo/logo-sm-size.png" alt="logo">
+                    <span>Explore USA</span>
+                </a>
             </div>
             <div class="header__search">
-                <img src="./image/search/icons8-search-48.svg" alt="search the site">
-                <div class="searchHiddenBlock hidden">
-                    <input type="text" placeholder="Что ищем?">
-                    <div class="searchHiddenBlock__cross"></div>
+                <img id="searchInHeader" src="./image/search/icons8-search-48.svg" alt="search the site">
+                <div id="searchPlaceInHeader" class="searchHiddenBlock hidden">
+                    <input id="inputInSearchPlace" type="text" placeholder="Что ищем?">
+                    <div id="crossInSearchPlace" class="searchHiddenBlock__cross"></div>
                     <div class="searchHiddenBlock__subBlock hidden"></div>
                 </div>
             </div>
         </header>
-        <div class="container">
+        <main class="main">
             <section class="banner">
-                <input class="banner__search" type="text" placeholder="Поиск по городам">
+                <input class="banner__search" id="inputInBanner" type="text" placeholder="Поиск по городам">
             </section>
             <section class="selectCity">
                 <h1>Города США</h1>
@@ -183,7 +188,7 @@
                     </div>
                 </div>
             </section>
-        </div>
+        </main>
         <footer class="footer">
             <div class="footer__logo">
                 <img src="/image/logo/logo-sm-size.png" alt="logo">
@@ -201,6 +206,6 @@
             </div>
         </footer>
     </div>
-    <div class="blackout hidden"></div>
+    <div id="darkBackground" class="blackout hidden"></div>
 </body>
 </html>
