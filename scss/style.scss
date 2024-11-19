@@ -306,7 +306,7 @@ $header-hight-1024: 7.5svh;
 .main {
     .banner {
         height: 35svh;
-        background-image: url(/image/banner/bg-md.png);
+        background-image: url(../image/banner/bg-md.png);
         background-size: 130%;
         background-position: 50% 0;
         display: flex;
@@ -320,7 +320,7 @@ $header-hight-1024: 7.5svh;
         }
         @media (width >= $breakpoint_xxl) {
             margin: 5svh auto 3svh;
-            background-image: url(/image/banner/bg-lg.png);
+            background-image: url(../image/banner/bg-lg.png);
             height: 75svh;
             width: 85%;
             border-radius: 20px;
