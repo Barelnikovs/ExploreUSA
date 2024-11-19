@@ -8,6 +8,8 @@
     <link rel="icon" type="image/png" href="image/favicon.png">
     <link rel="stylesheet" href="css/style.css">
     <script defer src="js/script.js"></script>
+    <script defer src="js/loadBanner.js"></script>
+    
 </head>
 <body">
     <div class="wrapper">
@@ -44,19 +46,20 @@
             </div>
             <div class="header__search">
                 <img id="searchInHeader" src="./image/search/icons8-search-48.svg" alt="search the site">
-                <div id="searchPlaceInHeader" class="searchHiddenBlock hidden">
+                <div class="searchPlace hidden" id="searchPlaceInHeader">
                     <input id="inputInSearchPlace" type="text" placeholder="Что ищем?">
-                    <div id="crossInSearchPlace" class="searchHiddenBlock__cross"></div>
+                    <div class="searchPlace__cross" id="crossInSearchPlace"></div>
                     <div class="searchHiddenBlock__subBlock hidden"></div>
                 </div>
             </div>
         </header>
         <main class="main">
-            <section class="banner">
-                <input class="banner__search" id="inputInBanner" type="text" placeholder="Поиск по городам">
+            <section class="banner" id="banner">
+                <h1>Города США</h1>
+                <h2>Исследуй уникальность каждого города</h2>
             </section>
             <section class="selectCity">
-                <h1>Города США</h1>
+                <h2>Города США</h2>
                 <div class="selectCity__sorting">
                     <p>Сортировать по</p>
                     <select id="sorting" name="sorting[]">
@@ -93,7 +96,7 @@
                     <div class="selectCity__city">
                         <a href="#">
                             <img class="selectCity__flag" src="image/flags/Flag_of_Phoenix,_Arizona-min.svg" alt="флаг Феникс">
-                            Финикс
+                            Феникс
                         </a>
                     </div>
                     <div class="selectCity__city">

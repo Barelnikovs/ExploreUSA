@@ -246,7 +246,7 @@ $header-hight-1024: 7.5svh;
         }
     }
 }
-.searchHiddenBlock {
+.searchPlace {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -259,7 +259,8 @@ $header-hight-1024: 7.5svh;
     height: $header-hight;
     width: 100vw;
     @media (width >= $breakpoint_xxl) {
-        padding: 0 7.5%;
+        height: $header-hight-1024;
+        justify-content: center;
     }
     input {
         height: 6svh;
@@ -306,10 +307,11 @@ $header-hight-1024: 7.5svh;
 .main {
     .banner {
         height: 35svh;
-        background-image: url(../image/banner/bg-md.png);
-        background-size: 130%;
-        background-position: 50% 0;
+        background-size: cover;
+        background-position: center center;
+        color: $white-text;
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
         @media ($breakpoint_sm <= width < $breakpoint_xl) {
@@ -320,35 +322,48 @@ $header-hight-1024: 7.5svh;
         }
         @media (width >= $breakpoint_xxl) {
             margin: 5svh auto 3svh;
-            background-image: url(../image/banner/bg-lg.png);
             height: 75svh;
             width: 85%;
             border-radius: 20px;
         }
-        &__search {
-            outline: none;
-            border: none;
-            background: #ffffffad;
-            backdrop-filter: blur(5px);
-            border-radius: 3px;
-            height: 40px;
-            width: 70%;
-            color: #000;
-            padding: 0 16px;
-            font-size: 1rem;
-            @media ($breakpoint_md <= width < $breakpoint_xxl) {
-                height: 60px;
-                font-size: 1.5rem;
+        h1 {
+            font-size: 2.5rem;
+            font-family: Arial, Helvetica, sans-serif;
+            text-shadow: 0 0 25px rgba(0, 0, 0, 1);
+            @media (width >= $breakpoint_sm) {
+                font-size: 3.2rem;
+            }
+            @media (width >= $breakpoint_md) {
+                font-size: 4.5rem;
+            }
+            @media (width >= $breakpoint_xl) {
+                font-size: 6rem;
             }
             @media (width >= $breakpoint_xxl) {
-                height: 50px;
-                width: 50%;
-                font-size: 1.5rem;
+                font-size: 6rem;
+            }
+        }
+        h2 {
+            font-size: 0.9rem;
+            font-weight: normal;
+            font-family: Arial, Helvetica, sans-serif;
+            text-shadow: 0 0 5px rgba(0, 0, 0, 1);
+            @media (width >= $breakpoint_sm) {
+                font-size: 1.1rem;
+            }
+            @media (width >= $breakpoint_md) {
+                font-size: 1.6rem;
+            }
+            @media (width >= $breakpoint_xl) {
+                font-size: 1rem;
+            }
+            @media (width >= $breakpoint_xl) {
+                font-size: 2.1rem;
             }
         }
     }
     .selectCity {
-        h1 {
+        h2 {
             font-size: 1.5rem;
             margin: 30px;
             font-family: Arial, Helvetica, sans-serif;
@@ -592,4 +607,6 @@ $header-hight-1024: 7.5svh;
 }
 .lockScrolling {
     position: fixed;
+    left: 0;
+    right: 0;
 }
