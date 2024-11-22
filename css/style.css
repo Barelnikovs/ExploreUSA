@@ -316,7 +316,7 @@
 }
 @media (width >= 1200px) {
   .searchPlace__cross {
-    right: 1%;
+    right: -14%;
     top: 0;
   }
 }
@@ -370,6 +370,7 @@
     height: 75svh;
     width: 85%;
     border-radius: 20px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.4);
   }
 }
 .main .banner h1 {
@@ -427,55 +428,46 @@
   font-size: 1.5rem;
   margin: 30px;
   font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
 }
-@media (540px <= width < 767px) {
+@media (width >= 540px) {
   .main .selectCity h2 {
     font-size: 1.8rem;
     margin-bottom: 40px;
     margin-top: 40px;
   }
 }
-@media (767px <= width < 1024px) {
+@media (width >= 767px) {
   .main .selectCity h2 {
     font-size: 2.4rem;
     margin-bottom: 50px;
     margin-top: 50px;
-    margin-left: 40px;
   }
 }
-@media (1024px <= width < 1200px) {
+@media (width >= 1024px) {
   .main .selectCity h2 {
     font-size: 2.8rem;
-    margin-bottom: 50px;
-    margin-top: 60px;
-    margin-left: 60px;
+    margin: 60px 0 50px;
   }
 }
 @media (width >= 1200px) {
   .main .selectCity h2 {
     font-size: 3rem;
-    margin-bottom: 50px;
-    margin-top: 60px;
-    margin-left: 7.5%;
   }
 }
 .main .selectCity__sorting {
   margin: 0 20px 20px;
   display: flex;
+  justify-content: center;
 }
 @media (767px <= width < 1024px) {
   .main .selectCity__sorting {
-    margin: 0 40px 40px;
+    margin-bottom: 40px;
   }
 }
-@media (1024px <= width < 1200px) {
+@media (width >= 1024px) {
   .main .selectCity__sorting {
-    margin: 0 60px 60px;
-  }
-}
-@media (width >= 1200px) {
-  .main .selectCity__sorting {
-    margin: 0 0 60px 7.5%;
+    margin-bottom: 60px;
   }
 }
 .main .selectCity__sorting p {
@@ -540,15 +532,26 @@
   grid-template-columns: repeat(2, 1fr);
   margin: 0 10px;
 }
-@media (1024px <= width < 1200px) {
+@media (width >= 540px) {
+  .main .selectCity__cities {
+    margin: 0 2% 0 12.5%;
+  }
+}
+@media (width >= 767px) {
+  .main .selectCity__cities {
+    margin: 0 2% 0 9%;
+  }
+}
+@media (width >= 1024px) {
   .main .selectCity__cities {
     grid-template-columns: repeat(3, 1fr);
+    margin: 0 0 0 2%;
   }
 }
 @media (width >= 1200px) {
   .main .selectCity__cities {
     grid-template-columns: repeat(4, 1fr);
-    margin: 0 7.5%;
+    margin: 0 8% 0 14%;
   }
 }
 .main .selectCity__city {
@@ -576,6 +579,7 @@
 }
 .main .selectCity__city a {
   display: flex;
+  justify-content: flex-start;
   align-items: center;
   text-decoration: none;
   color: #000;
@@ -605,6 +609,7 @@
      object-fit: cover;
   border-radius: 50%;
   border: 1px solid #000;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.4);
 }
 @media (540px <= width < 767px) {
   .main .selectCity__flag {

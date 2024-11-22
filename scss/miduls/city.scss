@@ -1,0 +1,55 @@
+@use './variables.scss' as v;
+
+.scroll-menu {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    overflow-x: auto;
+    @media (width >= v.$breakpoint_md) {
+        overflow-x: visible;
+        justify-content: center;
+    }
+    @media (width >= v.$breakpoint_xxl) {
+        height: 100px;
+        margin-bottom: -45px;
+    }
+    a {
+        text-decoration: none;
+        padding: 0 15px; 
+        transition: background-color 0.1s linear;
+        @media (width >= v.$breakpoint_xxl) {
+            padding: 0 25px;
+        }
+    }
+    a:hover {
+        background-color: #ecebeb;
+    }
+    a, span {
+        color: #3b3b3b;
+        white-space: nowrap;
+        height: 40px;
+        line-height: 40px;
+        border-radius: 15px;
+        margin: 0 10px;
+        font-size: 1.1rem;
+        font-family: Arial, Helvetica, sans-serif;
+        @media (width >= v.$breakpoint_xxl) {
+            font-size: 1.3rem;
+            height: 45px;
+            line-height: 45px;
+        }
+    }
+    &__location {
+        background-color: #e1e1e1;
+    }
+    a.scroll-menu__location {
+        margin-left: 30px;
+    }
+}
+.scroll-menu::-webkit-scrollbar{
+    width: 0;
+    height: 0;
+}
+.banner {
+    background-image: url(../image/banner/Atlanta.jpg);
+}
