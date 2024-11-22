@@ -53,3 +53,84 @@
 .banner {
     background-image: url(../image/banner/Atlanta.jpg);
 }
+.city-info {
+    padding: 20px 0;
+    &__city {
+        text-align: center;
+        font-weight: 400;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1.5rem;
+        margin: 30px 0 30px;
+    }
+    .discription {
+        margin-bottom: 30px;
+        padding: 0 10px;
+        p {
+            margin-bottom: 10px;
+            font-size: 1rem;
+            line-height: 1.7;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    }
+    .photo {
+        margin-bottom: 20px;
+        height: 35svh;
+        overflow-x: auto;
+        display: flex;
+        img {
+            margin: 0 10px;
+            height: 30svh;
+            width: 75%;
+            object-fit: cover;
+            box-shadow: 0 0 25px rgba(0, 0, 0, 0.4);
+            border-radius: 20px;
+        }
+    }
+    .photo::-webkit-scrollbar {
+        width: 0;
+        height: 0;
+    }
+    .form {
+        padding: 0 10px;
+        .data-block {
+            background-color: #d5dada;
+            box-shadow: 0 0 25px rgba(0, 0, 0, 0.4);
+            padding: 10px;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            p {
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 1.3rem;
+                margin-bottom: 12px;
+            }
+            input {
+                height: 2rem;
+            }
+            textarea {
+                height: 6rem;
+            }
+            input, textarea {
+                width: 100%;
+                margin-bottom: 10px;
+                font-size: 1.2rem;
+                border: none;
+                border-radius: 5px;
+                &:focus {
+                    outline: none;
+                }
+            }
+            button {
+                border: none;
+                border-radius: 10px;
+                height: 2rem;
+                width: 150px;
+                padding: 0 10px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 1.1rem;
+                margin-top: 5px;
+            }
+        }
+    }
+}
