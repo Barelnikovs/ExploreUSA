@@ -1,10 +1,10 @@
 @import './miduls/variables.scss';
+@import './miduls/city.scss';
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
 }
 .header {
     background-color: $header-color;
@@ -294,7 +294,10 @@
     }
 }
 .main {
-    .banner {
+    .banner-city {
+        background-image: url(../image/banner/Atlanta.jpg);
+    }
+    .banner, .banner-city {
         height: 35svh;
         background-size: cover;
         background-position: center center;

@@ -7,7 +7,6 @@
     <title>Атланта штат Джорджия</title>
     <link rel="icon" type="image/png" href="image/favicon.png">
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/city.css">
     <script defer src="../js/script.js"></script>
     
 </head>
@@ -60,9 +59,9 @@
                 <a class="scroll-menu__location" href="">Атланта:</a>
                 <a href="">О городе</a>
                 <a href="">Фото</a>
-                <a href="">Отзывы</a>
+                <a href="">Комментарии</a>
             </section>
-            <section class="banner" id="banner">
+            <section class="banner-city">
                 <h1>Атланта</h1>
                 <h2>Штат Джорджия</h2>
             </section>
@@ -79,18 +78,33 @@
                     <img src="../image/cities/Atlanta/fc6d14f306c454959f9c12de04117c10.jpg" alt="фото города">
                     <img src="../image/cities/Atlanta/gettyimages-864574496.jpg" alt="фото города">
                 </div>
+            </section>
+            <section class="form-and-comments">
                 <div class="form">
-                    <form action="" method="post">
+                    <form action="#" method="post">
                         <div class="data-block">
-                            <p>Оставьте ваш комментарий</p>
-                            <input class="name" id="form-name" type="text"  placeholder="Имя" name="Имя">
-                            <input class="email" id="form-email" type="email" placeholder="E-mail" name="E-mail">
-                            <textarea class id="form-comments" placeholder="Ваш комментарий" name="Комментарий"></textarea>
+                            <input id="form-name" type="text"  placeholder="Имя" name="Имя">
+                            <input id="form-email" type="email" placeholder="E-mail" name="E-mail">
+                        </div>   
+                        <div class="place-message">
+                            <textarea class="place-message__comment" id="form-comments" placeholder="Ваш комментарий" name="Комментарий"></textarea>
                             <button type="submit">Отправить</button>
-                        </div>        
-                    </form> 
+                        </div>     
+                    </form>
                 </div>
-
+                <div class="comments-conteiner">
+                    <div class="comments-conteiner__select">
+                        <p>Все комментарии (1)</p>
+                    </div>
+                    <div class="all-comments">
+                        <div class="all-comments__authors-name-block">
+                            <p class="all-comments__authors-name">Василий Пупкин</p>
+                        </div>
+                        <div class="all-comments__comment-block">
+                            <p class="all-comments__comment">Спасибо за развёрнутую информацию</p>
+                        </div>
+                    </div>
+                </div>
             </section>
         </main>
         <footer class="footer">
