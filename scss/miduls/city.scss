@@ -125,8 +125,7 @@
     background-color: #f0f0f0;
     padding-bottom: 150px;
     margin-bottom: -150px;
-    box-shadow: 0 15px 30px 10px rgba(0, 0, 0, 0.4);
-    
+    box-shadow: 0 15px 30px 10px rgba(0, 0, 0, 0.4);    
 }
 .form {
     border-top: 1px solid #c9c8c8;
@@ -143,6 +142,8 @@
         }
         @media (width >= v.$breakpoint_xxl) {
             padding-top: 40px;
+            width: 50%;
+            margin: 0 auto -5px;
         }
         input {
             height: 1.8rem;
@@ -180,6 +181,10 @@
         @media (width >= v.$breakpoint_md) {
             margin: 0 15%;
         }
+        @media (width >= v.$breakpoint_xxl) {
+            width: 50%;
+            margin: 0 auto;
+        }
         textarea {
             border: none;
             border-radius: 10px 10px 0 0;
@@ -208,7 +213,6 @@
             }
         }
         button {
-            transition: all 0.3 linear;
             border: none;
             border-radius: 15px;
             background-color: #143434;
@@ -218,6 +222,14 @@
             width: 100px;
             font-family: Arial, Helvetica, sans-serif;
             font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.1s linear;
+            &:hover {
+                background-color: #2e7575;
+            }
+            &:active {
+                background-color: #266262;
+            }
             @media (width >= v.$breakpoint_md) {
                 margin: 5px 15px;
                 height: 1.9rem;
@@ -236,12 +248,6 @@
                 height: 2.2rem;
                 font-size: 1.4rem;
                 width: 145px;
-            }
-            &:hover {
-                background-color: #2e7575;
-            }
-            &:active {
-                background-color: #266262;
             }
         }
     }         
@@ -269,7 +275,7 @@
                 font-size: 1.4rem;
             }
             @media (width >= v.$breakpoint_xxl) {
-                margin-left: 14%;
+                margin-left: 24%;
                 font-size: 1.6rem;
             }
         }
@@ -280,6 +286,10 @@
         margin: 0 10px;
         @media (width >= v.$breakpoint_md) {
             margin: 0 15%;
+        }
+        @media (width >= v.$breakpoint_xxl) {
+            width: 50%;
+            margin: 0 auto;
         }
         &__authors-name-block {
             p {

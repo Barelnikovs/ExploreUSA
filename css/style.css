@@ -178,6 +178,8 @@
 @media (width >= 1200px) {
   .form .data-block {
     padding-top: 40px;
+    width: 50%;
+    margin: 0 auto -5px;
   }
 }
 .form .data-block input {
@@ -224,6 +226,12 @@
     margin: 0 15%;
   }
 }
+@media (width >= 1200px) {
+  .form .place-message {
+    width: 50%;
+    margin: 0 auto;
+  }
+}
 .form .place-message textarea {
   border: none;
   border-radius: 10px 10px 0 0;
@@ -258,7 +266,6 @@
   outline: none;
 }
 .form .place-message button {
-  transition: all 0.3 linear;
   border: none;
   border-radius: 15px;
   background-color: #143434;
@@ -268,6 +275,14 @@
   width: 100px;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.1s linear;
+}
+.form .place-message button:hover {
+  background-color: #2e7575;
+}
+.form .place-message button:active {
+  background-color: #266262;
 }
 @media (width >= 767px) {
   .form .place-message button {
@@ -293,12 +308,6 @@
     font-size: 1.4rem;
     width: 145px;
   }
-}
-.form .place-message button:hover {
-  background-color: #2e7575;
-}
-.form .place-message button:active {
-  background-color: #266262;
 }
 
 .comments-conteiner {
@@ -332,7 +341,7 @@
 }
 @media (width >= 1200px) {
   .comments-conteiner__select p {
-    margin-left: 14%;
+    margin-left: 24%;
     font-size: 1.6rem;
   }
 }
@@ -344,6 +353,12 @@
 @media (width >= 767px) {
   .comments-conteiner .all-comments {
     margin: 0 15%;
+  }
+}
+@media (width >= 1200px) {
+  .comments-conteiner .all-comments {
+    width: 50%;
+    margin: 0 auto;
   }
 }
 .comments-conteiner .all-comments__authors-name-block p {

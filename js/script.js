@@ -9,6 +9,7 @@ const crossInNavigation = document.getElementById('navigationCross')
 const crossInSearchPlace = document.getElementById('crossInSearchPlace')
 const body = document.querySelector('BODY')
 const naviganion = document.querySelector('NAV')
+const anchors = document.querySelectorAll('a[href*="#"]')
 
 function turnOnHiddenModul() {
     darkBackground.classList.remove('hidden')
@@ -18,46 +19,61 @@ function turnOffHiddenModul() {
     darkBackground.classList.add('hidden')
     body.classList.remove('lockScrolling')
 }
-function openNavigation() {
+function openNavigation() { // открытие бургер меню
     turnOnHiddenModul()
     naviganion.classList.add('header__nav--active')
 }
-function closeNavigation() {
+function closeNavigation() { // закрытие бургер меню
     turnOffHiddenModul()
     naviganion.classList.remove('header__nav--active')
 }
-function openSearchInHeader() {
+function openSearchInHeader() { // открытие строки поиска
     turnOnHiddenModul()
     searchPlaceInHeader.classList.remove('hidden')
 }
-function closeSearchInHeader() {
+function closeSearchInHeader() { // закрытие строки поиска
     turnOffHiddenModul()
     searchPlaceInHeader.classList.add('hidden')
 }
 
 
 
-burgerMenu.addEventListener('click', function() {
+burgerMenu.addEventListener('click', function() { 
     openNavigation()
     darkBackground.addEventListener('click', function() {
         closeNavigation()
     })
 })
-crossInNavigation.addEventListener('click', function() {
+crossInNavigation.addEventListener('click', function() { 
     closeNavigation()
     darkBackground.removeEventListener('click', function() {
         closeNavigation()
     })
 })
-searchInHeader.addEventListener('click', function() {
+searchInHeader.addEventListener('click', function() { 
+    openNavigation()
     openSearchInHeader()
     darkBackground.addEventListener('click', function() {
         closeSearchInHeader() 
     })
 })
-crossInSearchPlace.addEventListener('click', function() {
+crossInSearchPlace.addEventListener('click', function() { 
     closeSearchInHeader()
     darkBackground.removeEventListener('click', function() {
         closeSearchInHeader() 
+    })
+})
+
+anchors.forEach((anchor) => { // плавный скроллинг
+    anchor.addEventListener('click', function(event) {
+        event.preventDefault()
+        if (anchor.getAttribute('href') === '#USACities' || anchor.getAttribute('href') === '#photo') {
+            closeNavigation()
+        }
+        const blockID = anchor.getAttribute('href')
+        document.querySelector(blockID).scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+        })
     })
 })

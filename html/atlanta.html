@@ -8,6 +8,7 @@
     <link rel="icon" type="image/png" href="image/favicon.png">
     <link rel="stylesheet" href="../css/style.css">
     <script defer src="../js/script.js"></script>
+    <script defer src="../js/scroll-to.js"></script>
     
 </head>
 <body">
@@ -21,19 +22,15 @@
             <nav class="header__nav">
                 <div>
                     <img class="homeIcon" src="../image/navigation/home-svgrepo-com.svg" alt="иконка дома">
-                    <a href="">Главная</a>
-                </div>
-                <div>
-                    <img src="../image/navigation/united-states-map-usa-america-svgrepo-com.svg" alt="иконка США">
-                    <a href="">Города США</a>
+                    <a href="../index.html">Главная</a>
                 </div>
                 <div>
                     <img src="../image/navigation/photo-svgrepo-com.svg" alt="иконка изображения">
-                    <a href="">Фотографии</a>
+                    <a href="#photo">Фотографии</a>
                 </div>
                 <div>
                     <img class="airplainIcon" src="../image/navigation/airplane-svgrepo-com.svg" alt="иконка самолёта">
-                    <a href="">Авиабилеты</a>
+                    <a href="https://www.aviasales.ru">Авиабилеты</a>
                 </div>
                 <div id="navigationCross" class="header__navCross"></div>
             </nav>
@@ -54,32 +51,32 @@
         </header>
         <main class="main">
             <section class="scroll-menu">
-                <a class="scroll-menu__back" href="">На главную</a>
+                <a class="scroll-menu__back" href="../index.html">На главную</a>
                 <span>|</span>
-                <a class="scroll-menu__location" href="">Атланта:</a>
-                <a href="">О городе</a>
-                <a href="">Фото</a>
-                <a href="">Комментарии</a>
+                <a class="scroll-menu__location" href="./atlanta.html">Атланта:</a>
+                <a href="#aboutCity">О городе</a>
+                <a href="#photo">Фотографии</a>
+                <a href="#comments">Комментарии</a>
             </section>
             <section class="banner-city">
                 <h1>Атланта</h1>
                 <h2>Штат Джорджия</h2>
             </section>
             <section class="city-info">
-                <h2 class="city-info__city">Атланта (штат Джорджия)</h2>
+                <h2 class="city-info__city" id="aboutCity">Атланта (штат Джорджия)</h2>
                 <div class="discription">
                     <p>Атланта, расположенная в самом сердце юго-востока США, является ярким и динамичным городом, который привлекает туристов со всего мира. Этот мегаполис, являющийся столицей штата Джорджия, удобно расположен всего в нескольких часах езды от побережья Атлантического океана и гор Аппалачей, что делает его идеальной отправной точкой для изучения региона.</p>
                     <p>Атланта славится своим богатым историческим наследием. Здесь находится Мартин Лютер Кинг-младший Национальный исторический парк, где вы сможете узнать о жизни и борьбе за гражданские права. Не упустите возможность посетить аквариум Джорджии — один из крупнейших в мире, где вас ждут захватывающие морские существа.</p>
                     <p>Город предлагает множество развлекательных возможностей: от живой музыкальной сцены до уникальных гастрономических впечатлений. Попробуйте знаменитый жареный куриный филе или насладитесь местным барбекю в одном из уютных ресторанов.</p>
                     <p>Прогуляйтесь по Пидмонт-парку или исследуйте креативные районы, такие как Инман-парк и Мидтаун. Атланта — это город, где история встречается с современностью, и он готов подарить вам незабываемые впечатления!</p>
                 </div>
-                <div class="photo">
+                <div class="photo" id="photo">
                     <img src="../image/cities/Atlanta/742cd14da4e59708e467551fbcaf0a2e.jpg" alt="фото города">
                     <img src="../image/cities/Atlanta/fc6d14f306c454959f9c12de04117c10.jpg" alt="фото города">
                     <img src="../image/cities/Atlanta/gettyimages-864574496.jpg" alt="фото города">
                 </div>
             </section>
-            <section class="form-and-comments">
+            <section class="form-and-comments" id="comments">
                 <div class="form">
                     <form action="#" method="post">
                         <div class="data-block">
