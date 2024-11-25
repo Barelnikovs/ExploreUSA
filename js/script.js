@@ -51,7 +51,6 @@ crossInNavigation.addEventListener('click', function() {
     })
 })
 searchInHeader.addEventListener('click', function() { 
-    openNavigation()
     openSearchInHeader()
     darkBackground.addEventListener('click', function() {
         closeSearchInHeader() 
