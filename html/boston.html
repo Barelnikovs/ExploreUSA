@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Исследуйте увлекательный мир городов США! Узнайте о культуре, достопримечательностях, истории и жизни в каждом уголке страны. Путеводители, советы по путешествиям и уникальные факты о самых известных и скрытых жемчужинах Америки.">
-    <title>Explore USA main</title>
+    <meta name="description" content="Откройте для себя Бостон — исторический город США, сочетающий в себе богатое культурное наследие, великолепную архитектуру и современные развлечения. Узнайте о лучших достопримечательностях, ресторанах и событиях в этом уникальном городе!">
+    <title>Бостон штат Массачусетс</title>
     <link rel="icon" type="image/png" href="image/favicon.png">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
     <script defer src="../js/script.js"></script>
+    <script defer src="../js/loadBanner.js"></script>
     
 </head>
 <body">
@@ -20,31 +21,27 @@
             </div>
             <nav class="header__nav">
                 <div>
-                    <img class="homeIcon" src="image/navigation/home-svgrepo-com.svg" alt="иконка дома">
-                    <a href="">Главная</a>
+                    <img class="homeIcon" src="../image/navigation/home-svgrepo-com.svg" alt="иконка дома">
+                    <a href="../index.html">Главная</a>
                 </div>
                 <div>
-                    <img src="image/navigation/united-states-map-usa-america-svgrepo-com.svg" alt="иконка США">
-                    <a href="">Города США</a>
+                    <img src="../image/navigation/photo-svgrepo-com.svg" alt="иконка изображения">
+                    <a href="#photo">Фотографии</a>
                 </div>
                 <div>
-                    <img src="image/navigation/photo-svgrepo-com.svg" alt="иконка изображения">
-                    <a href="">Фотографии</a>
-                </div>
-                <div>
-                    <img class="airplainIcon" src="image/navigation/airplane-svgrepo-com.svg" alt="иконка самолёта">
-                    <a href="">Авиабилеты</a>
+                    <img class="airplainIcon" src="../image/navigation/airplane-svgrepo-com.svg" alt="иконка самолёта">
+                    <a href="https://www.aviasales.ru" target="_blank">Авиабилеты</a>
                 </div>
                 <div id="navigationCross" class="header__navCross"></div>
             </nav>
             <div class="header__logo">
                 <a href="/index.html">
-                    <img src="image/logo/logo-md-size.png" alt="logo">
+                    <img src="../image/logo/logo-md-size.png" alt="logo">
                     <span>Explore USA</span>
                 </a>
             </div>
             <div class="header__search">
-                <img id="searchInHeader" src="./image/search/icons8-search-48.svg" alt="search the site">
+                <img id="searchInHeader" src="../image/search/icons8-search-48.svg" alt="search the site">
                 <div class="searchPlace hidden" id="searchPlaceInHeader">
                     <input id="inputInSearchPlace" type="text" placeholder="Что ищем?">
                     <div class="searchPlace__cross" id="crossInSearchPlace"></div>
@@ -53,14 +50,63 @@
             </div>
         </header>
         <main class="main">
+            <section class="scroll-menu">
+                <a class="scroll-menu__back" href="../index.html">На главную</a>
+                <span>|</span>
+                <a class="scroll-menu__location" href="./boston.html">Бостон:</a>
+                <a href="#aboutCity">О городе</a>
+                <a href="#photo">Фотографии</a>
+                <a href="#comments">Комментарии</a>
+            </section>
             <section class="banner" id="banner">
-                <h1>Атланта</h1>
-                <h2>Штат Джорджия</h2>
+                <h1>Бостон</h1>
+                <h2>Штат Массачусетс</h2>
+            </section>
+            <section class="city-info">
+                <h2 class="city-info__city" id="aboutCity">Бостон (штат Массачусетс)</h2>
+                <div class="discription">
+                    <p>Бостон, расположенный на северо-востоке США, является столицей штата Массачусетс и одним из старейших городов страны. Этот исторический город находится на побережье Атлантического океана и занимает стратегически важное место в Новой Англии. Бостон славится своей богатой историей, которая начинается с колониальных времен, когда он стал центром борьбы за независимость.</p>
+                    <p>Прогуливаясь по Бостону, вы сможете насладиться великолепной архитектурой, включая знаменитый Государственный дом и старинные церкви. Не пропустите возможность пройтись по «Святой тропе» — историческому маршруту, который проведет вас через ключевые места, связанные с американской революцией. Каждый шаг здесь пропитан духом истории.</p>
+                    <p>Город также предлагает множество современных развлечений: от живописных парков, таких как Бостонский общественный сад, до разнообразных музеев, включая Музей изящных искусств и Научный музей. Бостон известен своими культурными событиями и фестивалями, которые привлекают туристов со всего мира.</p>
+                    <p>Кулинарная сцена Бостона не оставит равнодушным ни одного гурмана. Здесь вы найдете как традиционные блюда, такие как кламерный суп, так и современные гастрономические изыски. Приезжайте в Бостон и откройте для себя этот уникальный город, где история встречается с современностью!</p>
+                </div>
+                <div class="photo" id="photo">
+                    <img src="../image/cities/Boston/boston1.jpg" alt="фото города">
+                    <img src="../image/cities/Boston/boston2.jpg" alt="фото города">
+                    <img src="../image/cities/Boston/boston3.jpg" alt="фото города">
+                </div>
+            </section>
+            <section class="form-and-comments" id="comments">
+                <div class="form">
+                    <form action="#" method="post">
+                        <div class="data-block">
+                            <input id="form-name" type="text"  placeholder="Имя" name="Имя">
+                            <input id="form-email" type="email" placeholder="E-mail" name="E-mail">
+                        </div>   
+                        <div class="place-message">
+                            <textarea class="place-message__comment" id="form-comments" placeholder="Ваш комментарий" name="Комментарий"></textarea>
+                            <button type="submit">Отправить</button>
+                        </div>     
+                    </form>
+                </div>
+                <div class="comments-conteiner">
+                    <div class="comments-conteiner__select">
+                        <p>Все комментарии (1)</p>
+                    </div>
+                    <div class="all-comments">
+                        <div class="all-comments__authors-name-block">
+                            <p class="all-comments__authors-name">Василий Пупкин</p>
+                        </div>
+                        <div class="all-comments__comment-block">
+                            <p class="all-comments__comment">Спасибо за развёрнутую информацию</p>
+                        </div>
+                    </div>
+                </div>
             </section>
         </main>
         <footer class="footer">
             <div class="footer__logo">
-                <img src="image/logo/logo-sm-size.png" alt="logo">
+                <img src="../image/logo/logo-sm-size.png" alt="logo">
                 <p>Explore USA</p>
             </div>
             <div class="footer__nav">

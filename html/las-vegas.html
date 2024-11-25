@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Откройте для себя Лас-Вегас — город ярких огней, захватывающих развлечений и мировых казино. Узнайте о лучших отелях, ресторанах и шоу, которые сделают ваше пребывание незабываемым!">
+    <title>Лас вегас штат Невада</title>
+    <link rel="icon" type="image/png" href="image/favicon.png">
+    <link rel="stylesheet" href="../css/style.css">
+    <script defer src="../js/script.js"></script>
+    <script defer src="../js/loadBanner.js"></script>
+    
+</head>
+<body">
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__burgerMenu">
+                <div class="header__burger" id="burgerMenu">
+                    <span></span>
+                </div>
+            </div>
+            <nav class="header__nav">
+                <div>
+                    <img class="homeIcon" src="../image/navigation/home-svgrepo-com.svg" alt="иконка дома">
+                    <a href="../index.html">Главная</a>
+                </div>
+                <div>
+                    <img src="../image/navigation/photo-svgrepo-com.svg" alt="иконка изображения">
+                    <a href="#photo">Фотографии</a>
+                </div>
+                <div>
+                    <img class="airplainIcon" src="../image/navigation/airplane-svgrepo-com.svg" alt="иконка самолёта">
+                    <a href="https://www.aviasales.ru" target="_blank">Авиабилеты</a>
+                </div>
+                <div id="navigationCross" class="header__navCross"></div>
+            </nav>
+            <div class="header__logo">
+                <a href="/index.html">
+                    <img src="../image/logo/logo-md-size.png" alt="logo">
+                    <span>Explore USA</span>
+                </a>
+            </div>
+            <div class="header__search">
+                <img id="searchInHeader" src="../image/search/icons8-search-48.svg" alt="search the site">
+                <div class="searchPlace hidden" id="searchPlaceInHeader">
+                    <input id="inputInSearchPlace" type="text" placeholder="Что ищем?">
+                    <div class="searchPlace__cross" id="crossInSearchPlace"></div>
+                    <div class="searchHiddenBlock__subBlock hidden"></div>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <section class="scroll-menu">
+                <a class="scroll-menu__back" href="../index.html">На главную</a>
+                <span>|</span>
+                <a class="scroll-menu__location" href="./las-vegas.html">Лас вегас:</a>
+                <a href="#aboutCity">О городе</a>
+                <a href="#photo">Фотографии</a>
+                <a href="#comments">Комментарии</a>
+            </section>
+            <section class="banner" id="banner">
+                <h1>Лас вегас</h1>
+                <h2>штат Невада</h2>
+            </section>
+            <section class="city-info">
+                <h2 class="city-info__city" id="aboutCity">Лас вегас (штат Невада)</h2>
+                <div class="discription">
+                    <p>Лас-Вегас, расположенный в пустыне Мохаве на юге штата Невада, является одним из самых известных туристических направлений в мире. Этот яркий город, окруженный живописными горами и пустынными ландшафтами, легко найти на карте США. Всего в нескольких часах езды от Лос-Анджелеса и других крупных городов, он привлекает миллионы туристов каждый год.</p>
+                    <p>Лас-Вегас славится своими впечатляющими казино и отелями, которые предлагают уникальные тематические впечатления. Прогуливаясь по знаменитой Стрип, вы сможете насладиться великолепием таких легендарных мест, как Белладжио с его фонтанами и Венеция с романтичными гондолами. Город предлагает множество возможностей для развлечений — от захватывающих шоу мирового уровня до живых выступлений знаменитостей.</p>
+                    <p>Кроме азартных игр, Лас-Вегас предлагает разнообразие ресторанов с кухнями со всего мира, где можно попробовать блюда от шеф-поваров, удостоенных звезд Мишлен. Также здесь есть множество торговых центров и бутиков, где можно приобрести эксклюзивные товары и сувениры</p>
+                    <p>Не забудьте о природных красотах вокруг города! Природный парк Ред-Рок и озеро Мид предоставляют отличные возможности для активного отдыха и наслаждения красотой невадской природы. Лас-Вегас — это не просто город азартных игр; это место, где каждый найдет что-то для себя!</p>
+                </div>
+                <div class="photo" id="photo">
+                    <img src="../image/cities/Las-vegas/las-vegas1.jpg" alt="фото города">
+                    <img src="../image/cities/Las-vegas/las-vegas2.jpg" alt="фото города">
+                    <img src="../image/cities/Las-vegas/las-vegas3.jpg" alt="фото города">
+                </div>
+            </section>
+            <section class="form-and-comments" id="comments">
+                <div class="form">
+                    <form action="#" method="post">
+                        <div class="data-block">
+                            <input id="form-name" type="text"  placeholder="Имя" name="Имя">
+                            <input id="form-email" type="email" placeholder="E-mail" name="E-mail">
+                        </div>   
+                        <div class="place-message">
+                            <textarea class="place-message__comment" id="form-comments" placeholder="Ваш комментарий" name="Комментарий"></textarea>
+                            <button type="submit">Отправить</button>
+                        </div>     
+                    </form>
+                </div>
+                <div class="comments-conteiner">
+                    <div class="comments-conteiner__select">
+                        <p>Все комментарии (1)</p>
+                    </div>
+                    <div class="all-comments">
+                        <div class="all-comments__authors-name-block">
+                            <p class="all-comments__authors-name">Василий Пупкин</p>
+                        </div>
+                        <div class="all-comments__comment-block">
+                            <p class="all-comments__comment">Спасибо за развёрнутую информацию</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="footer__logo">
+                <img src="../image/logo/logo-sm-size.png" alt="logo">
+                <p>Explore USA</p>
+            </div>
+            <div class="footer__nav">
+                <p>Главная</p>
+                <p>Города</p>
+                <p>Фотографии</p>
+                <p>Авиабилеты</p>
+            </div>
+            <div class="footer__info">
+                <p>Developers: Daniil Barelnikov, Ivan Ivanov</p>
+                <p>2024 "exploreusa.com"</p>
+            </div>
+        </footer>
+    </div>
+    <div id="darkBackground" class="blackout hidden"></div>
+</body>
+</html>
