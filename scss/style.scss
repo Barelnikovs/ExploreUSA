@@ -159,6 +159,7 @@
             width: 4.5svh;
             background-color: $hidden-search-block-color;
             border-radius: 50%;
+            cursor: pointer;
             @media (width >= $breakpoint_xxl) {
                 right: 2.5%;
             }
@@ -263,6 +264,7 @@
         position: relative;
         height: 4.5svh;
         width: 4.5svh;
+        cursor: pointer;
         @media (width >= $breakpoint_xxl) {
             right: -14%;
             top: 0;
