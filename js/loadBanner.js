@@ -1,10 +1,5 @@
 const banner = document.getElementById('banner')
 const title = document.title
-console.log(title)
-if (title === 'Атланта штат Джорджия') {
-     alert('должно работать')
-}
-
 const images = ['./image/banner/Atlanta.jpg',
      './image/banner/Boston.jpg',
       './image/banner/chicago.jpg',
