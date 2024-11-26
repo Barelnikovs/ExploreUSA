@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Исследуйте Филадельфию — город истории и культуры! Узнайте о знаменитых достопримечательностях, вкусной кухне и уникальных событиях, которые делают этот город особенным. Погрузитесь в атмосферу Филадельфии!">
+    <title>Филадельфия штат Пенсильвания</title>
+    <link rel="icon" type="image/png" href="image/favicon.png">
+    <link rel="stylesheet" href="../css/style.css">
+    <script defer src="../js/script.js"></script>
+    <script defer src="../js/loadBanner.js"></script>
+    
+</head>
+<body">
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__burgerMenu">
+                <div class="header__burger" id="burgerMenu">
+                    <span></span>
+                </div>
+            </div>
+            <nav class="header__nav">
+                <div>
+                    <img class="homeIcon" src="../image/navigation/home-svgrepo-com.svg" alt="иконка дома">
+                    <a href="../index.html">Главная</a>
+                </div>
+                <div>
+                    <img src="../image/navigation/photo-svgrepo-com.svg" alt="иконка изображения">
+                    <a href="#photo">Фотографии</a>
+                </div>
+                <div>
+                    <img class="airplainIcon" src="../image/navigation/airplane-svgrepo-com.svg" alt="иконка самолёта">
+                    <a href="https://www.aviasales.ru" target="_blank">Авиабилеты</a>
+                </div>
+                <div id="navigationCross" class="header__navCross"></div>
+            </nav>
+            <div class="header__logo">
+                <a href="/index.html">
+                    <img src="../image/logo/logo-md-size.png" alt="logo">
+                    <span>Explore USA</span>
+                </a>
+            </div>
+            <div class="header__search">
+                <img id="searchInHeader" src="../image/search/icons8-search-48.svg" alt="search the site">
+                <div class="searchPlace hidden" id="searchPlaceInHeader">
+                    <input id="inputInSearchPlace" type="text" placeholder="Что ищем?">
+                    <div class="searchPlace__cross" id="crossInSearchPlace"></div>
+                    <div class="searchHiddenBlock__subBlock hidden"></div>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <section class="scroll-menu">
+                <a class="scroll-menu__back" href="../index.html">На главную</a>
+                <span>|</span>
+                <a class="scroll-menu__location" href="./philadelphia.html">Филадельфия:</a>
+                <a href="#aboutCity">О городе</a>
+                <a href="#photo">Фотографии</a>
+                <a href="#comments">Комментарии</a>
+            </section>
+            <section class="banner" id="banner">
+                <h1>Филадельфия</h1>
+                <h2>штат Пенсильвания</h2>
+            </section>
+            <section class="city-info">
+                <h2 class="city-info__city" id="aboutCity">Филадельфия (штат Пенсильвания)</h2>
+                <div class="discription">
+                    <p>Филадельфия, расположенная на восточном побережье США, является одним из самых исторически значимых городов страны. Находясь в штате Пенсильвания, всего в двух часах езды от Нью-Йорка и Вашингтона, она привлекает туристов своим уникальным сочетанием культурного наследия и современности. Город славится своими живописными улицами, историческими памятниками и разнообразной архитектурой.</p>
+                    <p>Одной из главных достопримечательностей Филадельфии является Индепенденс-холл, где была подписана Декларация независимости в 1776 году. Здесь же находится знаменитый Колокол Свободы, символ американской независимости. Прогулка по историческому району позволит вам погрузиться в атмосферу революционных времен и узнать больше о становлении нации.</p>
+                    <p>Филадельфия также известна своей разнообразной кухней. Не упустите возможность попробовать знаменитые чизстейки и мягкие прецели, которые стали неотъемлемой частью местной гастрономической культуры. Множество ресторанов и кафе предлагают блюда на любой вкус, что делает город настоящим раем для гурманов.</p>
+                    <p>Кроме того, Филадельфия предлагает богатую культурную жизнь. Музеи, такие как музей искусств Филадельфии и музей науки и индустрии, удивят вас своими экспозициями. Каждый год здесь проходят различные фестивали и мероприятия, которые делают Филадельфию привлекательным местом для туристов. Не упустите шанс открыть для себя этот удивительный город!</p>
+                </div>
+                <div class="photo" id="photo">
+                    <img src="../image/cities/Philadelphia/fhiladelphia1.jpg" alt="фото города">
+                    <img src="../image/cities/Philadelphia/fhiladelphia2.jpg" alt="фото города">
+                    <img src="../image/cities/Philadelphia/fhiladelphia3.jpg" alt="фото города">
+                </div>
+            </section>
+            <section class="form-and-comments" id="comments">
+                <div class="form">
+                    <form action="#" method="post">
+                        <div class="data-block">
+                            <input id="form-name" type="text"  placeholder="Имя" name="Имя">
+                            <input id="form-email" type="email" placeholder="E-mail" name="E-mail">
+                        </div>   
+                        <div class="place-message">
+                            <textarea class="place-message__comment" id="form-comments" placeholder="Ваш комментарий" name="Комментарий"></textarea>
+                            <button type="submit">Отправить</button>
+                        </div>     
+                    </form>
+                </div>
+                <div class="comments-conteiner">
+                    <div class="comments-conteiner__select">
+                        <p>Все комментарии (1)</p>
+                    </div>
+                    <div class="all-comments">
+                        <div class="all-comments__authors-name-block">
+                            <p class="all-comments__authors-name">Василий Пупкин</p>
+                        </div>
+                        <div class="all-comments__comment-block">
+                            <p class="all-comments__comment">Спасибо за развёрнутую информацию</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="footer__logo">
+                <img src="../image/logo/logo-sm-size.png" alt="logo">
+                <p>Explore USA</p>
+            </div>
+            <div class="footer__nav">
+                <p>Главная</p>
+                <p>Города</p>
+                <p>Фотографии</p>
+                <p>Авиабилеты</p>
+            </div>
+            <div class="footer__info">
+                <p>Developers: Daniil Barelnikov, Ivan Ivanov</p>
+                <p>2024 "exploreusa.com"</p>
+            </div>
+        </footer>
+    </div>
+    <div id="darkBackground" class="blackout hidden"></div>
+</body>
+</html>
