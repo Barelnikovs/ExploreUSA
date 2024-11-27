@@ -76,3 +76,19 @@ anchors.forEach((anchor) => { // плавный скроллинг
         })
     })
 })
+
+const citiesNavigation = document.getElementById('cities-navigation') // слушатель события resize
+if (window.innerWidth >= 1200) {
+    citiesNavigation.style.display = 'grid'
+} else if (window.innerWidth < 1200) {
+    citiesNavigation.style.display = 'none'
+}
+window.addEventListener('resize', function() {
+    if (this.innerWidth >= 1200) {
+        // citiesNavigation.classList.remove('hidden')
+        citiesNavigation.style.display = 'grid'
+    } else if (this.innerWidth < 1200) {
+        citiesNavigation.style.display = 'none'
+        // citiesNavigation.classList.add('hidden')
+    }
+})
