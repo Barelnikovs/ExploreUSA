@@ -116,7 +116,7 @@
     margin: 0 6.5%;
   }
 }
-.city-info .photo {
+.city-info .photos {
   margin-bottom: 20px;
   height: 35svh;
   overflow-x: auto;
@@ -124,13 +124,13 @@
   display: flex;
 }
 @media (width >= 1200px) {
-  .city-info .photo {
+  .city-info .photos {
     width: 87%;
     margin: 0 auto;
     height: 40svh;
   }
 }
-.city-info .photo img {
+.city-info .photos img {
   margin: 0 10px;
   height: 30svh;
   width: 75%;
@@ -140,11 +140,11 @@
   border-radius: 20px;
 }
 @media (width >= 1200px) {
-  .city-info .photo img {
+  .city-info .photos img {
     width: 33%;
   }
 }
-.city-info .photo::-webkit-scrollbar {
+.city-info .photos::-webkit-scrollbar {
   width: 0;
   height: 0;
 }
@@ -155,34 +155,33 @@
   margin-bottom: -150px;
   box-shadow: 0 15px 30px 10px rgba(0, 0, 0, 0.4);
 }
-
-.form {
+.form-and-comments .form-wrapper {
   border-top: 1px solid #c9c8c8;
   margin-bottom: 30px;
   background-color: #f0f0f0;
 }
-.form .data-block {
+.form-and-comments .form-wrapper .data-block {
   padding: 10px 0;
   margin: 0 10px -5px;
 }
 @media (width >= 767px) {
-  .form .data-block {
+  .form-and-comments .form-wrapper .data-block {
     margin: 0 15% -5px;
   }
 }
 @media (width >= 1024px) {
-  .form .data-block {
+  .form-and-comments .form-wrapper .data-block {
     padding-top: 30px;
   }
 }
 @media (width >= 1200px) {
-  .form .data-block {
+  .form-and-comments .form-wrapper .data-block {
     padding-top: 40px;
     width: 50%;
     margin: 0 auto -5px;
   }
 }
-.form .data-block input {
+.form-and-comments .form-wrapper .data-block input {
   height: 1.8rem;
   padding: 0 10px;
   border: 2px solid #143434;
@@ -192,27 +191,27 @@
   font-size: 1.1rem;
 }
 @media (width >= 767px) {
-  .form .data-block input {
+  .form-and-comments .form-wrapper .data-block input {
     font-size: 1.3rem;
     height: 2rem;
   }
 }
 @media (width >= 1024px) {
-  .form .data-block input {
+  .form-and-comments .form-wrapper .data-block input {
     font-size: 1.4rem;
     height: 2.2rem;
   }
 }
 @media (width >= 1200px) {
-  .form .data-block input {
+  .form-and-comments .form-wrapper .data-block input {
     font-size: 1.6rem;
     height: 2.6rem;
   }
 }
-.form .data-block input:focus {
+.form-and-comments .form-wrapper .data-block input:focus {
   outline: none;
 }
-.form .place-message {
+.form-and-comments .form-wrapper .place-message {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -222,17 +221,17 @@
   background-color: #fff;
 }
 @media (width >= 767px) {
-  .form .place-message {
+  .form-and-comments .form-wrapper .place-message {
     margin: 0 15%;
   }
 }
 @media (width >= 1200px) {
-  .form .place-message {
+  .form-and-comments .form-wrapper .place-message {
     width: 50%;
     margin: 0 auto;
   }
 }
-.form .place-message textarea {
+.form-and-comments .form-wrapper .place-message textarea {
   border: none;
   border-radius: 10px 10px 0 0;
   border-bottom: 2px solid #143434;
@@ -244,28 +243,28 @@
   resize: none;
 }
 @media (width >= 767px) {
-  .form .place-message textarea {
+  .form-and-comments .form-wrapper .place-message textarea {
     height: 120px;
     padding: 5px 8px;
     font-size: 1.27rem;
   }
 }
 @media (width >= 1024px) {
-  .form .place-message textarea {
+  .form-and-comments .form-wrapper .place-message textarea {
     font-size: 1.4rem;
     height: 150px;
   }
 }
 @media (width >= 1200px) {
-  .form .place-message textarea {
+  .form-and-comments .form-wrapper .place-message textarea {
     font-size: 1.6rem;
     height: 180px;
   }
 }
-.form .place-message textarea:focus {
+.form-and-comments .form-wrapper .place-message textarea:focus {
   outline: none;
 }
-.form .place-message button {
+.form-and-comments .form-wrapper .place-message button {
   border: none;
   border-radius: 15px;
   background-color: #143434;
@@ -278,14 +277,14 @@
   cursor: pointer;
   transition: background-color 0.1s linear;
 }
-.form .place-message button:hover {
+.form-and-comments .form-wrapper .place-message button:hover {
   background-color: #2e7575;
 }
-.form .place-message button:active {
+.form-and-comments .form-wrapper .place-message button:active {
   background-color: #266262;
 }
 @media (width >= 767px) {
-  .form .place-message button {
+  .form-and-comments .form-wrapper .place-message button {
     margin: 5px 15px;
     height: 1.9rem;
     font-size: 1.15rem;
@@ -294,7 +293,7 @@
   }
 }
 @media (width >= 1024px) {
-  .form .place-message button {
+  .form-and-comments .form-wrapper .place-message button {
     margin: 5px 15px;
     font-size: 1.25rem;
     width: 130px;
@@ -302,19 +301,18 @@
   }
 }
 @media (width >= 1200px) {
-  .form .place-message button {
+  .form-and-comments .form-wrapper .place-message button {
     margin: 7px 20px;
     height: 2.2rem;
     font-size: 1.4rem;
     width: 145px;
   }
 }
-
-.comments-conteiner {
+.form-and-comments .comments-conteiner {
   font-family: Arial, Helvetica, sans-serif;
   background-color: #f0f0f0;
 }
-.comments-conteiner__select {
+.form-and-comments .comments-conteiner__select {
   border-bottom: 2px solid #000000;
   font-weight: 700;
   padding: 0 20px;
@@ -322,83 +320,83 @@
   font-size: 1.1rem;
 }
 @media (width >= 767px) {
-  .comments-conteiner__select {
+  .form-and-comments .comments-conteiner__select {
     margin-bottom: 20px;
   }
 }
 @media (width >= 767px) {
-  .comments-conteiner__select p {
+  .form-and-comments .comments-conteiner__select p {
     line-height: 1.5;
     margin-left: 13%;
     font-size: 1.25rem;
   }
 }
 @media (width >= 1024px) {
-  .comments-conteiner__select p {
+  .form-and-comments .comments-conteiner__select p {
     margin-left: 13.5%;
     font-size: 1.4rem;
   }
 }
 @media (width >= 1200px) {
-  .comments-conteiner__select p {
+  .form-and-comments .comments-conteiner__select p {
     margin-left: 24%;
     font-size: 1.6rem;
   }
 }
-.comments-conteiner .all-comments {
+.form-and-comments .comments-conteiner .all-comments {
   border: 1px solid #000;
   border-radius: 10px;
   margin: 0 10px;
 }
 @media (width >= 767px) {
-  .comments-conteiner .all-comments {
+  .form-and-comments .comments-conteiner .all-comments {
     margin: 0 15%;
   }
 }
 @media (width >= 1200px) {
-  .comments-conteiner .all-comments {
+  .form-and-comments .comments-conteiner .all-comments {
     width: 50%;
     margin: 0 auto;
   }
 }
-.comments-conteiner .all-comments__authors-name-block p {
+.form-and-comments .comments-conteiner .all-comments .authors-block p {
   border-bottom: 1px solid #000;
   padding: 3px 10px;
   font-size: 0.9rem;
   font-weight: bold;
 }
 @media (width >= 767px) {
-  .comments-conteiner .all-comments__authors-name-block p {
+  .form-and-comments .comments-conteiner .all-comments .authors-block p {
     font-size: 1.1rem;
   }
 }
 @media (width >= 1024px) {
-  .comments-conteiner .all-comments__authors-name-block p {
+  .form-and-comments .comments-conteiner .all-comments .authors-block p {
     font-size: 1.3rem;
   }
 }
 @media (width >= 1200px) {
-  .comments-conteiner .all-comments__authors-name-block p {
+  .form-and-comments .comments-conteiner .all-comments .authors-block p {
     font-size: 1.45rem;
     padding: 10px;
   }
 }
-.comments-conteiner .all-comments__comment-block p {
+.form-and-comments .comments-conteiner .all-comments .comments-block p {
   padding: 3px 10px;
 }
 @media (width >= 767px) {
-  .comments-conteiner .all-comments__comment-block p {
+  .form-and-comments .comments-conteiner .all-comments .comments-block p {
     font-size: 1.3rem;
     padding: 5px 10px;
   }
 }
 @media (width >= 1024px) {
-  .comments-conteiner .all-comments__comment-block p {
+  .form-and-comments .comments-conteiner .all-comments .comments-block p {
     font-size: 1.4rem;
   }
 }
 @media (width >= 1200px) {
-  .comments-conteiner .all-comments__comment-block p {
+  .form-and-comments .comments-conteiner .all-comments .comments-block p {
     font-size: 1.6rem;
     padding: 10px;
   }
@@ -425,19 +423,21 @@
   .header {
     height: 7.5svh;
     padding: 0 8%;
+    display: flex;
+    justify-content: space-between;
   }
 }
-.header__burgerMenu {
+.header .burger-menu {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 @media (width >= 1200px) {
-  .header__burgerMenu {
-    justify-content: start;
+  .header .burger-menu {
+    display: none;
   }
 }
-.header__burger {
+.header .burger-menu__burger {
   position: relative;
   height: 30px;
   width: 27px;
@@ -447,39 +447,39 @@
   cursor: pointer;
 }
 @media (767px <= width < 1024px) {
-  .header__burger {
+  .header .burger-menu__burger {
     height: 35px;
     width: 32px;
   }
 }
 @media (1024px <= width < 1200px) {
-  .header__burger {
+  .header .burger-menu__burger {
     height: 35px;
     width: 32px;
   }
 }
 @media (width >= 1200px) {
-  .header__burger {
-    height: 32px;
-    width: 30px;
+  .header .burger-menu__burger {
+    height: 35px;
+    width: 32px;
   }
 }
-.header__burger span, .header__burger::before, .header__burger::after {
+.header .burger-menu__burger span, .header .burger-menu__burger::before, .header .burger-menu__burger::after {
   position: absolute;
   height: 12%;
   width: 100%;
   background-color: #fff;
 }
-.header__burger::before, .header__burger::after {
+.header .burger-menu__burger::before, .header .burger-menu__burger::after {
   content: "";
 }
-.header__burger::before {
+.header .burger-menu__burger::before {
   top: 4px;
 }
-.header__burger::after {
+.header .burger-menu__burger::after {
   bottom: 4px;
 }
-.header__nav {
+.header .navigation {
   position: absolute;
   top: 0;
   left: -75%;
@@ -491,19 +491,13 @@
   transition: all 0.25s ease-out;
 }
 @media (width >= 540px) {
-  .header__nav {
+  .header .navigation {
     left: -60%;
     width: 60%;
   }
 }
-@media (width >= 767px) {
-  .header__nav {
-    left: -45%;
-    width: 45%;
-  }
-}
-@media (width >= 1200px) {
-  .header__nav {
+@media (width >= 1024px) {
+  .header .navigation {
     left: 7.5%;
     right: 7.5%;
     top: -90svh;
@@ -515,110 +509,81 @@
     flex-direction: column;
   }
 }
-.header__nav--active {
+@media (width >= 1200px) {
+  .header .navigation {
+    display: none;
+  }
+}
+.header .navigation--active {
   left: 0;
 }
-@media (width >= 1200px) {
-  .header__nav--active {
+@media (width >= 1024px) {
+  .header .navigation--active {
     top: 0;
     left: 7.5%;
   }
 }
-@media (width >= 1200px) {
-  .header__nav .icons-navigation {
+@media (width >= 1024px) {
+  .header .navigation .icons-navigation {
     display: flex;
     justify-content: space-around;
     margin-bottom: 20px;
   }
 }
-.header__nav .icons-navigation div {
+.header .navigation .icons-navigation div {
   display: flex;
   align-items: center;
   margin-bottom: 10px;
 }
-.header__nav .icons-navigation img {
+.header .navigation .icons-navigation img {
   height: 40px;
   width: 40px;
   margin-right: 12px;
 }
 @media (width >= 767px) {
-  .header__nav .icons-navigation img {
+  .header .navigation .icons-navigation img {
     height: 45px;
     width: 45px;
     margin-right: 14px;
   }
 }
 @media (width >= 1024px) {
-  .header__nav .icons-navigation img {
+  .header .navigation .icons-navigation img {
     height: 50px;
     width: 50px;
     margin-right: 15px;
   }
 }
-@media (width >= 1200px) {
-  .header__nav .icons-navigation img {
-    margin-right: 10px;
-  }
-}
-.header__nav .icons-navigation .homeIcon {
+.header .navigation .icons-navigation__homeIcon {
   height: 32px;
   width: 32px;
   margin-right: 20px;
 }
 @media (width >= 767px) {
-  .header__nav .icons-navigation .homeIcon {
+  .header .navigation .icons-navigation__homeIcon {
     height: 36px;
     width: 36px;
     margin-right: 23px;
   }
 }
 @media (width >= 1024px) {
-  .header__nav .icons-navigation .homeIcon {
+  .header .navigation .icons-navigation__homeIcon {
     height: 40px;
     width: 40px;
     margin-right: 25px;
   }
 }
-@media (width >= 1200px) {
-  .header__nav .icons-navigation .homeIcon {
-    margin-right: 20px;
-  }
-}
-.header__nav .icons-navigation .airplainIcon {
-  height: 37px;
-  width: 37px;
-  margin-right: 15px;
-}
-@media (width >= 767px) {
-  .header__nav .icons-navigation .airplainIcon {
-    height: 41px;
-    width: 41px;
-    margin-right: 17px;
-  }
-}
-@media (width >= 1024px) {
-  .header__nav .icons-navigation .airplainIcon {
-    height: 46px;
-    width: 46px;
-    margin-right: 19px;
-  }
-}
-@media (width >= 1200px) {
-  .header__nav .icons-navigation .airplainIcon {
-    margin-right: 14px;
-  }
-}
-.header__nav .icons-navigation a {
+.header .navigation .icons-navigation a {
   text-decoration: none;
   color: #000;
   font-size: 1.2rem;
 }
 @media (width >= 1024px) {
-  .header__nav .icons-navigation a {
+  .header .navigation .icons-navigation a {
     font-size: 1.3rem;
   }
 }
-.header__navCross {
+.header .navigation .icons-navigation__nav-cross {
   position: absolute;
   right: 6%;
   top: 2svh;
@@ -628,36 +593,31 @@
   border-radius: 50%;
   cursor: pointer;
 }
-@media (width >= 1200px) {
-  .header__navCross {
-    right: 2.5%;
-  }
-}
-.header__navCross::before, .header__navCross::after {
+.header .navigation .icons-navigation__nav-cross::before, .header .navigation .icons-navigation__nav-cross::after {
   content: "";
   position: absolute;
   height: 5%;
   width: 60%;
   background-color: #0d2323;
 }
-.header__navCross::before {
+.header .navigation .icons-navigation__nav-cross::before {
   top: 50%;
   transform: rotate(-45deg) translate(28%, 240%);
 }
-.header__navCross::after {
+.header .navigation .icons-navigation__nav-cross::after {
   bottom: 50%;
   transform: rotate(45deg) translate(28%, -240%);
 }
-.header__nav .cities-navigation {
+.header .navigation .cities-navigation {
   border-top: 2px solid #000;
   padding-top: 40px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 }
-.header__nav .cities-navigation .cities-block {
+.header .navigation .cities-navigation .cities-block {
   margin: 0 0 2svh 31%;
 }
-.header__nav .cities-navigation .cities-block a {
+.header .navigation .cities-navigation .cities-block a {
   text-decoration: none;
   color: #000;
   font-size: 1.3rem;
@@ -665,7 +625,7 @@
   justify-content: flex-start;
   align-items: center;
 }
-.header__nav .cities-navigation .cities-block__flag {
+.header .navigation .cities-navigation .cities-block__flag {
   height: 60px;
   width: 60px;
   margin-right: 18px;
@@ -675,75 +635,85 @@
   border: 1px solid #000;
   box-shadow: 0 0 25px rgba(0, 0, 0, 0.4);
 }
-.header__logo {
+.header .logo {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.header__logo a {
+.header .logo a {
   display: flex;
   justify-content: center;
   align-items: center;
   text-decoration: none;
 }
-.header__logo img {
+.header .logo img {
   margin: 3px;
   width: 6svh;
   height: 6svh;
 }
-@media (1024px <= width < 1200px) {
-  .header__logo img {
-    height: 5.5svh;
-    width: 5.5svh;
+@media (width >= 1024px) {
+  .header .logo img {
+    height: 4.5svh;
+    width: 4.5svh;
     margin-right: 15px;
   }
 }
-.header__logo span {
+@media (width >= 1200px) {
+  .header .logo img {
+    height: 5svh;
+    width: 5svh;
+  }
+}
+.header .logo span {
   color: #fff;
   font-size: 3.5svh;
   font-family: Arial, Helvetica, sans-serif;
   letter-spacing: 0.5px;
 }
-@media (1024px <= width < 1200px) {
-  .header__logo span {
-    font-size: 3.3svh;
+@media (width >= 1024px) {
+  .header .logo span {
+    font-size: 2.8svh;
   }
 }
-.header__search {
+@media (width >= 1200px) {
+  .header .logo span {
+    font-size: 3svh;
+  }
+}
+.header .search {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 @media (width >= 1200px) {
-  .header__search {
+  .header .search {
     justify-content: end;
   }
 }
-.header__search img {
+.header .search img {
   width: 35px;
   height: 35px;
   cursor: pointer;
 }
 @media (767px <= width < 1024px) {
-  .header__search img {
+  .header .search img {
     width: 44px;
     height: 44px;
   }
 }
 @media (1024px <= width < 1200px) {
-  .header__search img {
+  .header .search img {
     width: 44px;
     height: 44px;
   }
 }
 @media (width >= 1200px) {
-  .header__search img {
+  .header .search img {
     width: 40px;
     height: 40px;
   }
 }
-
-.searchPlace {
+.header .search__wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -757,12 +727,12 @@
   width: 100vw;
 }
 @media (width >= 1200px) {
-  .searchPlace {
+  .header .search__wrapper {
     height: 7.5svh;
     justify-content: center;
   }
 }
-.searchPlace input {
+.header .search__input {
   height: 6svh;
   width: 60%;
   outline: none;
@@ -770,34 +740,34 @@
   background: transparent;
   font-size: 3.7svh;
 }
-.searchPlace__cross {
+.header .search__cross {
   position: relative;
   height: 4.5svh;
   width: 4.5svh;
   cursor: pointer;
 }
 @media (width >= 1200px) {
-  .searchPlace__cross {
+  .header .search__cross {
     right: -14%;
     top: 0;
   }
 }
-.searchPlace__cross::before, .searchPlace__cross::after {
+.header .search__cross::before, .header .search__cross::after {
   content: "";
   position: absolute;
   height: 3%;
   width: 100%;
   background-color: #000;
 }
-.searchPlace__cross::before {
+.header .search__cross::before {
   top: 50%;
   transform: rotate(-45deg) translate(0%, -20%);
 }
-.searchPlace__cross::after {
+.header .search__cross::after {
   bottom: 50%;
   transform: rotate(45deg) translate(0%, 20%);
 }
-.searchPlace__subBlock {
+.header .search__results {
   position: absolute;
   left: 0;
   top: 100%;
@@ -806,10 +776,7 @@
   background-color: #f0f5f5;
 }
 
-.main .banner-city {
-  background-image: url(../image/banner/Atlanta.jpg);
-}
-.main .banner, .main .banner-city {
+.main .banner {
   height: 35svh;
   background-size: cover;
   background-position: center center;
@@ -820,17 +787,17 @@
   align-items: center;
 }
 @media (540px <= width < 1024px) {
-  .main .banner, .main .banner-city {
+  .main .banner {
     height: 55svh;
   }
 }
 @media (1024px <= width < 1200px) {
-  .main .banner, .main .banner-city {
+  .main .banner {
     height: 45svh;
   }
 }
 @media (width >= 1200px) {
-  .main .banner, .main .banner-city {
+  .main .banner {
     margin: 5svh auto 3svh;
     height: 75svh;
     width: 85%;
@@ -838,54 +805,54 @@
     box-shadow: 0 0 25px rgba(0, 0, 0, 0.4);
   }
 }
-.main .banner h1, .main .banner-city h1 {
+.main .banner h1 {
   font-size: 2.5rem;
   font-family: Arial, Helvetica, sans-serif;
   text-shadow: 0 0 25px rgb(0, 0, 0);
 }
 @media (width >= 540px) {
-  .main .banner h1, .main .banner-city h1 {
+  .main .banner h1 {
     font-size: 3.2rem;
   }
 }
 @media (width >= 767px) {
-  .main .banner h1, .main .banner-city h1 {
+  .main .banner h1 {
     font-size: 4.5rem;
   }
 }
 @media (width >= 1024px) {
-  .main .banner h1, .main .banner-city h1 {
+  .main .banner h1 {
     font-size: 6rem;
   }
 }
 @media (width >= 1200px) {
-  .main .banner h1, .main .banner-city h1 {
+  .main .banner h1 {
     font-size: 6rem;
   }
 }
-.main .banner h2, .main .banner-city h2 {
+.main .banner h2 {
   font-size: 0.9rem;
   font-weight: normal;
   font-family: Arial, Helvetica, sans-serif;
   text-shadow: 0 0 5px rgb(0, 0, 0);
 }
 @media (width >= 540px) {
-  .main .banner h2, .main .banner-city h2 {
+  .main .banner h2 {
     font-size: 1.1rem;
   }
 }
 @media (width >= 767px) {
-  .main .banner h2, .main .banner-city h2 {
+  .main .banner h2 {
     font-size: 1.6rem;
   }
 }
 @media (width >= 1024px) {
-  .main .banner h2, .main .banner-city h2 {
+  .main .banner h2 {
     font-size: 1rem;
   }
 }
 @media (width >= 1024px) {
-  .main .banner h2, .main .banner-city h2 {
+  .main .banner h2 {
     font-size: 2.1rem;
   }
 }
@@ -920,129 +887,129 @@
     font-size: 3rem;
   }
 }
-.main .selectCity__sorting {
+.main .selectCity .sorting {
   margin: 0 20px 20px;
   display: flex;
   justify-content: center;
 }
 @media (767px <= width < 1024px) {
-  .main .selectCity__sorting {
+  .main .selectCity .sorting {
     margin-bottom: 40px;
   }
 }
 @media (width >= 1024px) {
-  .main .selectCity__sorting {
+  .main .selectCity .sorting {
     margin-bottom: 60px;
   }
 }
-.main .selectCity__sorting p {
+.main .selectCity .sorting p {
   font-size: 1rem;
   margin-right: 10px;
   font-family: Arial, Helvetica, sans-serif;
 }
 @media (540px <= width < 767px) {
-  .main .selectCity__sorting p {
+  .main .selectCity .sorting p {
     font-size: 1.1rem;
   }
 }
 @media (767px <= width < 1024px) {
-  .main .selectCity__sorting p {
+  .main .selectCity .sorting p {
     font-size: 1.6rem;
     margin-right: 22px;
   }
 }
 @media (1024px <= width < 1200px) {
-  .main .selectCity__sorting p {
+  .main .selectCity .sorting p {
     font-size: 1.8rem;
     margin-right: 22px;
   }
 }
 @media (width >= 1200px) {
-  .main .selectCity__sorting p {
+  .main .selectCity .sorting p {
     font-size: 1.8rem;
     margin-right: 26px;
   }
 }
-.main .selectCity__sorting select {
+.main .selectCity .sorting select {
   height: 22px;
   font-size: 1rem;
 }
 @media (540px <= width < 767px) {
-  .main .selectCity__sorting select {
+  .main .selectCity .sorting select {
     height: 24px;
   }
 }
 @media (767px <= width < 1024px) {
-  .main .selectCity__sorting select {
+  .main .selectCity .sorting select {
     height: 32px;
     font-size: 1.2rem;
   }
 }
 @media (1024px <= width < 1200px) {
-  .main .selectCity__sorting select {
+  .main .selectCity .sorting select {
     height: 36px;
     width: 220px;
     font-size: 1.2rem;
   }
 }
 @media (width >= 1200px) {
-  .main .selectCity__sorting select {
+  .main .selectCity .sorting select {
     height: 36px;
     width: 220px;
     font-size: 1.3rem;
   }
 }
-.main .selectCity__cities {
+.main .selectCity .cities-block {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   margin: 0 10px;
 }
 @media (width >= 540px) {
-  .main .selectCity__cities {
+  .main .selectCity .cities-block {
     margin: 0 2% 0 12.5%;
   }
 }
 @media (width >= 767px) {
-  .main .selectCity__cities {
+  .main .selectCity .cities-block {
     margin: 0 2% 0 9%;
   }
 }
 @media (width >= 1024px) {
-  .main .selectCity__cities {
+  .main .selectCity .cities-block {
     grid-template-columns: repeat(3, 1fr);
     margin: 0 0 0 2%;
   }
 }
 @media (width >= 1200px) {
-  .main .selectCity__cities {
+  .main .selectCity .cities-block {
     grid-template-columns: repeat(4, 1fr);
     margin: 0 8% 0 14%;
   }
 }
-.main .selectCity__city {
+.main .selectCity .cities-block__city {
   margin: 0 0 12px 10px;
 }
 @media (540px <= width < 767px) {
-  .main .selectCity__city {
+  .main .selectCity .cities-block__city {
     margin: 0 0 15px 10px;
   }
 }
 @media (767px <= width < 1024px) {
-  .main .selectCity__city {
+  .main .selectCity .cities-block__city {
     margin: 0 0 15px 30px;
   }
 }
 @media (1024px <= width < 1200px) {
-  .main .selectCity__city {
+  .main .selectCity .cities-block__city {
     margin: 0 0 15px 40px;
   }
 }
 @media (width >= 1200px) {
-  .main .selectCity__city {
+  .main .selectCity .cities-block__city {
     margin: 0 0 40px 0;
   }
 }
-.main .selectCity__city a {
+.main .selectCity .cities-block__city a {
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -1052,21 +1019,21 @@
   font-size: 0.9rem;
 }
 @media (540px <= width < 767px) {
-  .main .selectCity__city a {
+  .main .selectCity .cities-block__city a {
     font-size: 1.1rem;
   }
 }
 @media (767px <= width < 1200px) {
-  .main .selectCity__city a {
+  .main .selectCity .cities-block__city a {
     font-size: 1.5rem;
   }
 }
 @media (width >= 1200px) {
-  .main .selectCity__city a {
+  .main .selectCity .cities-block__city a {
     font-size: 1.5rem;
   }
 }
-.main .selectCity__flag {
+.main .selectCity .cities-block__flag {
   margin-right: 10px;
   height: 40px;
   width: 40px;
@@ -1077,27 +1044,27 @@
   box-shadow: 0 0 25px rgba(0, 0, 0, 0.4);
 }
 @media (540px <= width < 767px) {
-  .main .selectCity__flag {
+  .main .selectCity .cities-block__flag {
     height: 45px;
     width: 45px;
   }
 }
 @media (767px <= width < 1024px) {
-  .main .selectCity__flag {
+  .main .selectCity .cities-block__flag {
     height: 60px;
     width: 60px;
     margin-right: 18px;
   }
 }
 @media (1024px <= width < 1200px) {
-  .main .selectCity__flag {
+  .main .selectCity .cities-block__flag {
     height: 60px;
     width: 60px;
     margin-right: 18px;
   }
 }
 @media (width >= 1200px) {
-  .main .selectCity__flag {
+  .main .selectCity .cities-block__flag {
     height: 60px;
     width: 60px;
     margin-right: 18px;
@@ -1112,83 +1079,90 @@
   padding-bottom: 40px;
   font-family: Arial, Helvetica, sans-serif;
 }
-.footer__logo {
+.footer .logo {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 0 10px;
   margin: 30px 0;
 }
-.footer__logo img {
+.footer .logo img {
   height: 48px;
   margin: 0 7px;
 }
 @media (767px <= width < 1024px) {
-  .footer__logo img {
+  .footer .logo img {
     height: 70px;
     margin: 0 7px;
   }
 }
 @media (1024px <= width < 1200px) {
-  .footer__logo img {
+  .footer .logo img {
     height: 80px;
     margin: 0 8px;
   }
 }
-.footer__logo p {
+.footer .logo p {
   margin: 0 7px;
   font-size: 1.2rem;
   font-weight: bold;
   letter-spacing: 0.5px;
 }
 @media (767px <= width < 1024px) {
-  .footer__logo p {
+  .footer .logo p {
     font-size: 1.5rem;
   }
 }
 @media (1024px <= width < 1200px) {
-  .footer__logo p {
+  .footer .logo p {
     font-size: 1.7rem;
   }
 }
-.footer__nav {
+.footer .navigation {
   display: flex;
   justify-content: center;
   padding: 0 45px;
   margin-bottom: 30px;
   flex-wrap: wrap;
+  transition: -webkit-text-decoration 0.3s linear;
+  transition: text-decoration 0.3s linear;
+  transition: text-decoration 0.3s linear, -webkit-text-decoration 0.3s linear;
 }
-.footer__nav p {
+.footer .navigation a {
   margin: 5px 10px;
-  cursor: pointer;
   font-size: 1rem;
+  color: #fff;
+  text-decoration: none;
 }
 @media (767px <= width < 1024px) {
-  .footer__nav p {
+  .footer .navigation a {
     font-size: 1.3rem;
   }
 }
 @media (1024px <= width < 1200px) {
-  .footer__nav p {
+  .footer .navigation a {
     font-size: 1.45rem;
   }
 }
-.footer__info {
+.footer .navigation a:hover {
+  text-decoration: underline;
+}
+.footer .info {
   padding: 0 45px;
 }
-.footer__info p {
+.footer .info p {
   font-size: 0.8rem;
   text-align: center;
   color: #c4c4c4;
   opacity: 80%;
 }
 @media (767px <= width < 1024px) {
-  .footer__info p {
+  .footer .info p {
     font-size: 1rem;
   }
 }
 @media (1024px <= width < 1200px) {
-  .footer__info p {
+  .footer .info p {
     font-size: 1.15rem;
   }
 }

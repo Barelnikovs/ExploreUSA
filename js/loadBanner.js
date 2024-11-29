@@ -1,5 +1,7 @@
 const banner = document.getElementById('banner')
 const title = document.title
+console.log(title)
+
 const images = ['./image/banner/Atlanta.jpg',
      './image/banner/Boston.jpg',
       './image/banner/chicago.jpg',

@@ -1,15 +1,12 @@
 'use strict'
 
-const burgerMenu = document.getElementById('burgerMenu')
-const searchInHeader = document.getElementById('searchInHeader')
-const searchPlaceInHeader = document.getElementById('searchPlaceInHeader')
 const inputInSearchPlace = document.getElementById('inputInSearchPlace')
-const darkBackground = document.getElementById('darkBackground')
-const crossInNavigation = document.getElementById('navigationCross')
-const crossInSearchPlace = document.getElementById('crossInSearchPlace')
+
+/* вспомогательные функции */
 const body = document.querySelector('BODY')
 const naviganion = document.querySelector('NAV')
-const anchors = document.querySelectorAll('a[href*="#"]')
+const darkBackground = document.getElementById('darkBackground')
+const searchPlaceInHeader = document.getElementById('searchPlaceInHeader')
 
 function turnOnHiddenModul() {
     darkBackground.classList.remove('hidden')
@@ -21,11 +18,11 @@ function turnOffHiddenModul() {
 }
 function openNavigation() { // открытие бургер меню
     turnOnHiddenModul()
-    naviganion.classList.add('header__nav--active')
+    naviganion.classList.add('navigation--active')
 }
 function closeNavigation() { // закрытие бургер меню
     turnOffHiddenModul()
-    naviganion.classList.remove('header__nav--active')
+    naviganion.classList.remove('navigation--active')
 }
 function openSearchInHeader() { // открытие строки поиска
     turnOnHiddenModul()
@@ -37,6 +34,11 @@ function closeSearchInHeader() { // закрытие строки поиска
 }
 
 
+/* открытие и закрытие меню бургер и поисковой строки */
+const burgerMenu = document.getElementById('burgerMenu')
+const crossInNavigation = document.getElementById('navigationCross')
+const searchInHeader = document.getElementById('searchInHeader')
+const crossInSearchPlace = document.getElementById('crossInSearchPlace')
 
 burgerMenu.addEventListener('click', function() { 
     openNavigation()
@@ -63,7 +65,10 @@ crossInSearchPlace.addEventListener('click', function() {
     })
 })
 
-anchors.forEach((anchor) => { // плавный скроллинг
+/* плавный скроллинг */
+const anchors = document.querySelectorAll('a[href*="#"]')
+
+anchors.forEach((anchor) => { 
     anchor.addEventListener('click', function(event) {
         event.preventDefault()
         if (anchor.getAttribute('href') === '#USACities' || anchor.getAttribute('href') === '#photo') {
@@ -77,18 +82,22 @@ anchors.forEach((anchor) => { // плавный скроллинг
     })
 })
 
-const citiesNavigation = document.getElementById('cities-navigation') // слушатель события resize
-if (window.innerWidth >= 1200) {
-    citiesNavigation.style.display = 'grid'
-} else if (window.innerWidth < 1200) {
-    citiesNavigation.style.display = 'none'
-}
-window.addEventListener('resize', function() {
-    if (this.innerWidth >= 1200) {
-        // citiesNavigation.classList.remove('hidden')
-        citiesNavigation.style.display = 'grid'
-    } else if (this.innerWidth < 1200) {
-        citiesNavigation.style.display = 'none'
-        // citiesNavigation.classList.add('hidden')
+/* Включает и выключает блок со странами в nav в зависимости от ширины видимого пространства */
+const citiesInNavigation = document.querySelector('#cities-navigation')
+function toggleCitiesInNavigation() {
+    if (window.innerWidth >= 1200 || window.innerWidth < 1024) {
+        citiesInNavigation.classList.add('hidden')
+    } else if (window.innerWidth >= 1024 && window.innerWidth < 1200) {
+        citiesInNavigation.classList.remove('hidden')
     }
-})
+}
+toggleCitiesInNavigation()
+window.addEventListener('resize', toggleCitiesInNavigation)
+
+// const sorting = document.querySelector('#sorting')
+// const 
+
+// sorting.addEventListener('change', changeSorting)
+// function changeSorting() {
+
+// }

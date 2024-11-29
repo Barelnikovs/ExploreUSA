@@ -14,26 +14,22 @@
 <body">
     <div class="wrapper">
         <header class="header">
-            <div class="header__burgerMenu">
-                <div class="header__burger" id="burgerMenu">
+            <div class="burger-menu">
+                <div class="burger-menu__burger" id="burgerMenu">
                     <span></span>
                 </div>
             </div>
-            <nav class="header__nav">
+            <nav class="navigation">
                 <div class="icons-navigation">
                     <div>
-                        <img class="homeIcon" src="image/navigation/home-svgrepo-com.svg" alt="иконка дома">
+                        <img class="icons-navigation__homeIcon" src="image/navigation/home-svgrepo-com.svg" alt="иконка дома">
                         <a href="./index.html">Главная</a>
                     </div>
                     <div>
                         <img src="image/navigation/united-states-map-usa-america-svgrepo-com.svg" alt="иконка США">
                         <a href="#USACities">Города США</a>
                     </div>
-                    <div>
-                        <img class="airplainIcon" src="image/navigation/airplane-svgrepo-com.svg" alt="иконка самолёта">
-                        <a href="https://www.aviasales.ru">Авиабилеты</a>
-                    </div>
-                    <div id="navigationCross" class="header__navCross"></div>
+                    <div class="icons-navigation__nav-cross" id="navigationCross"></div>
                 </div>
                 <div class="cities-navigation" id="cities-navigation">
                     <div class="cities-block">
@@ -158,18 +154,18 @@
                     </div>
                 </div>
             </nav>
-            <div class="header__logo">
+            <div class="logo">
                 <a href="/index.html">
                     <img src="image/logo/logo-md-size.png" alt="logo">
                     <span>Explore USA</span>
                 </a>
             </div>
-            <div class="header__search">
+            <div class="search">
                 <img id="searchInHeader" src="./image/search/icons8-search-48.svg" alt="search the site">
-                <div class="searchPlace hidden" id="searchPlaceInHeader">
-                    <input id="inputInSearchPlace" type="text" placeholder="Что ищем?">
-                    <div class="searchPlace__cross" id="crossInSearchPlace"></div>
-                    <div class="searchHiddenBlock__subBlock hidden"></div>
+                <div class="search__wrapper hidden" id="searchPlaceInHeader">
+                    <input class="search__input" id="inputInSearchPlace" type="text" placeholder="Что ищем?">
+                    <div class="search__cross" id="crossInSearchPlace"></div>
+                    <div class="search__results hidden"></div>
                 </div>
             </div>
         </header>
@@ -180,132 +176,131 @@
             </section>
             <section class="selectCity" id="USACities">
                 <h2>Города США</h2>
-                <div class="selectCity__sorting">
+                <div class="sorting">
                     <p>Сортировать по</p>
                     <select id="sorting" name="sorting[]">
                         <option value="По популярности" selected>По популярности</option>
                         <option value="По алфавиту">По алфавиту</option>
-                        <option value="По величине">По величине</option>
                     </select>
                 </div>
-                <div class="selectCity__cities">
-                    <div class="selectCity__city">
+                <div class="cities-block" id="all-cities">
+                    <div class="cities-block__city" data-popularity="1">
                         <a href="html/new-york.html">
-                            <img class="selectCity__flag" src="image/flags/Flag_of_New_York_City-min.svg" alt="флаг Нью-йорк">
+                            <img class="cities-block__flag" src="image/flags/Flag_of_New_York_City-min.svg" alt="флаг Нью-йорк">
                             Нью-Йорк
                         </a>
                     </div>
-                    <div class="selectCity__city">
+                    <div class="cities-block__city" data-popularity="2">
                         <a href="html/los-angeles.html">
-                            <img class="selectCity__flag" src="image/flags/Flag_of_Los_Angeles,_California-min.svg" alt="флаг Лос-Анджелес">
+                            <img class="cities-block__flag" src="image/flags/Flag_of_Los_Angeles,_California-min.svg" alt="флаг Лос-Анджелес">
                             Лос-Анджелес
                         </a>
                     </div>
-                    <div class="selectCity__city">
+                    <div class="cities-block__city" data-popularity="4">
                         <a href="html/chicago.html">
-                            <img class="selectCity__flag" src="image/flags/Flag_of_Chicago,_Illinois-min.svg" alt="флаг Чикаго">
+                            <img class="cities-block__flag" src="image/flags/Flag_of_Chicago,_Illinois-min.svg" alt="флаг Чикаго">
                             Чикаго
                         </a>
                     </div>
-                    <div class="selectCity__city">
+                    <div class="cities-block__city" data-popularity="9">
                         <a href="html/houston.html">
-                            <img class="selectCity__flag" src="image/flags/Flag_of_Houston,_Texas-min.svg" alt="флаг Хьюстон">
+                            <img class="cities-block__flag" src="image/flags/Flag_of_Houston,_Texas-min.svg" alt="флаг Хьюстон">
                             Хьюстон
                         </a>
                     </div>
-                    <div class="selectCity__city">
+                    <div class="cities-block__city" data-popularity="11">
                         <a href="html/phoenix.html">
-                            <img class="selectCity__flag" src="image/flags/Flag_of_Phoenix,_Arizona-min.svg" alt="флаг Феникс">
+                            <img class="cities-block__flag" src="image/flags/Flag_of_Phoenix,_Arizona-min.svg" alt="флаг Феникс">
                             Феникс
                         </a>
                     </div>
-                    <div class="selectCity__city">
+                    <div class="cities-block__city" data-popularity="10">
                         <a href="html/philadelphia.html">
-                            <img class="selectCity__flag" src="image/flags/Flag_of_Philadelphia,_Pennsylvania-min.svg" alt="флаг Филадельфия">
+                            <img class="cities-block__flag" src="image/flags/Flag_of_Philadelphia,_Pennsylvania-min.svg" alt="флаг Филадельфия">
                             Филадельфия
                         </a>
                     </div>
-                    <div class="selectCity__city">
+                    <div class="cities-block__city" data-popularity="15">
                         <a href="html/san-antonio.html">
-                            <img class="selectCity__flag" src="image/flags/Flag_of_San_Antonio,_Texas-min.svg" alt="флаг Сан-Антонио">
+                            <img class="cities-block__flag" src="image/flags/Flag_of_San_Antonio,_Texas-min.svg" alt="флаг Сан-Антонио">
                             Сан-Антонио
                         </a>
                     </div>
-                    <div class="selectCity__city">
+                    <div class="cities-block__city" data-popularity="14">
                         <a href="html/san-diego.html">
-                            <img class="selectCity__flag" src="image/flags/Flag_of_San_Diego,_California-min.svg" alt="флаг Сан-Диего">
+                            <img class="cities-block__flag" src="image/flags/Flag_of_San_Diego,_California-min.svg" alt="флаг Сан-Диего">
                             Сан-Диего
                         </a>
                     </div>
-                    <div class="selectCity__city">
+                    <div class="cities-block__city" data-popularity="12">
                         <a href="html/dallas.html">
-                            <img class="selectCity__flag" src="image/flags/Flag_of_Dallas-min.svg" alt="флаг Даллас">
+                            <img class="cities-block__flag" src="image/flags/Flag_of_Dallas-min.svg" alt="флаг Даллас">
                             Даллас
                         </a>
                     </div>
-                    <div class="selectCity__city">
+                    <div class="cities-block__city" data-popularity="16">
                         <a href="html/san-jose.html">
-                            <img class="selectCity__flag" src="image/flags/Flag_of_San_José,_California-min.svg" alt="флаг Сан-Хосе">
+                            <img class="cities-block__flag" src="image/flags/Flag_of_San_José,_California-min.svg" alt="флаг Сан-Хосе">
                             Сан-Хосе
                         </a>
                     </div>
-                    <div class="selectCity__city">
+                    <div class="cities-block__city" data-popularity="6">
                         <a href="html/san-francisco.html">
-                            <img class="selectCity__flag" src="image/flags/Flag_of_San_Francisco-min.svg" alt="флаг Сан-Франциско">
+                            <img class="cities-block__flag" src="image/flags/Flag_of_San_Francisco-min.svg" alt="флаг Сан-Франциско">
                             Сан-Франциско
                         </a>
                     </div>
-                    <div class="selectCity__city">
+                    <div class="cities-block__city" data-popularity="17">
                         <a href="html/seattle.html">
-                            <img class="selectCity__flag" src="image/flags/Flag_of_Seattle,_Washington_(1943–1963).gif" alt="флаг Сиэтла">
+                            <img class="cities-block__flag" src="image/flags/Flag_of_Seattle,_Washington_(1943–1963).gif" alt="флаг Сиэтла">
                             Сиэтл
                         </a>
                     </div>
-                    <div class="selectCity__city">
+                    <div class="cities-block__city" data-popularity="20">
                         <a href="html/washington-dc.html">
-                            <img class="selectCity__flag" src="image/flags/Flag_of_Washington,_D.C-min.svg" alt="флаг Вашингтон округ Колумбия">
+                            <img class="cities-block__flag" src="image/flags/Flag_of_Washington,_D.C-min.svg" alt="флаг Вашингтон округ Колумбия">
                             Вашингтон, округ Колумбия
                         </a>
                     </div>
-                    <div class="selectCity__city">
+                    <div class="cities-block__city" data-popularity="7">
                         <a href="html/boston.html">
-                            <img class="selectCity__flag" src="image/flags/Flag_of_Boston-min.svg" alt="флаг Бостона">
+                            <img class="cities-block__flag" src="image/flags/Flag_of_Boston-min.svg" alt="флаг Бостона">
                             Бостон
                         </a>
                     </div>
-                    <div class="selectCity__city">
+                    <div class="cities-block__city" data-popularity="13">
                         <a href="html/detroit.html">
-                            <img class="selectCity__flag" src="image/flags/Flag_of_Detroit-min.svg" alt="флаг Детроита">
+                            <img class="cities-block__flag" src="image/flags/Flag_of_Detroit-min.svg" alt="флаг Детроита">
                             Детройт
                         </a>
                     </div>
-                    <div class="selectCity__city">
+                    <div class="cities-block__city" data-popularity="8">
                         <a href="html/atlanta.html">
-                            <img class="selectCity__flag" src="image/flags/Flag_of_Atlanta-min.svg" alt="флаг Атланты">
+                            <img class="cities-block__flag" src="image/flags/Flag_of_Atlanta-min.svg" alt="флаг Атланты">
                             Атланта
                         </a>
                     </div>
-                    <div class="selectCity__city">
+                    <div class="cities-block__city" data-popularity="3">
                         <a href="html/miami.html">
-                            <img class="selectCity__flag" src="image/flags/Flag_of_Miami,_Florida-min.svg" alt="флаг Майами">
+                            <img class="cities-block__flag" src="image/flags/Flag_of_Miami,_Florida-min.svg" alt="флаг Майами">
                             Майами
                         </a>
                     </div>
-                    <div class="selectCity__city">
+                    <div class="cities-block__city" data-popularity="18">
                         <a href="html/minneapolis.html">
-                            <img class="selectCity__flag" src="image/flags/Flag_of_Minneapolis-min.svg" alt="флаг Миннеаполиса">
+                            <img class="cities-block__flag" src="image/flags/Flag_of_Minneapolis-min.svg" alt="флаг Миннеаполиса">
                             Миннеаполис
                         </a>
                     </div>
-                    <div class="selectCity__city">
+                    <div class="cities-block__city" data-popularity="19">
                         <a href="html/new-orlean.html">
-                            <img class="selectCity__flag" src="image/flags/Flag_of_New_Orleans,_Louisiana-min.svg" alt="флаг Нового Орлеана">
+                            <img class="cities-block__flag" src="image/flags/Flag_of_New_Orleans,_Louisiana-min.svg" alt="флаг Нового Орлеана">
                             Новый Орлеан
                         </a>
                     </div>
-                    <div class="selectCity__city">
+                    <div class="cities-block__city" data-popularity="5">
                         <a href="html/las-vegas.html">
-                            <img class="selectCity__flag" src="image/flags/Flag_of_Las_Vegas,_Nevada-min-cropped.svg" alt="флаг Лас-Вегаса">
+                            <img class="cities-block__flag" src="image/flags/Flag_of_Las_Vegas,_Nevada-min-cropped.svg" alt="флаг Лас-Вегаса">
                             Лас-Вегас
                         </a>
                     </div>
@@ -313,17 +308,15 @@
             </section>
         </main>
         <footer class="footer">
-            <div class="footer__logo">
+            <div class="logo">
                 <img src="image/logo/logo-sm-size.png" alt="logo">
                 <p>Explore USA</p>
             </div>
-            <div class="footer__nav">
-                <p>Главная</p>
-                <p>Города</p>
-                <p>Фотографии</p>
-                <p>Авиабилеты</p>
+            <div class="navigation">
+                <a href="./index.html">Главная</a>
+                <a href="#all-cities">Города</a>
             </div>
-            <div class="footer__info">
+            <div class="info">
                 <p>Developers: Daniil Barelnikov, Ivan Ivanov</p>
                 <p>2024 "exploreusa.com"</p>
             </div>
