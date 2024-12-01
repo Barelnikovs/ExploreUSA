@@ -93,11 +93,3 @@ function toggleCitiesInNavigation() {
 }
 toggleCitiesInNavigation()
 window.addEventListener('resize', toggleCitiesInNavigation)
-
-// const sorting = document.querySelector('#sorting')
-// const 
-
-// sorting.addEventListener('change', changeSorting)
-// function changeSorting() {
-
-// }

@@ -176,11 +176,8 @@
             </section>
             <section class="selectCity" id="USACities">
                 <div class="sorting">
-                    <p>Сортировать по</p>
-                    <select id="sorting" name="sorting[]">
-                        <option value="По популярности" selected>По популярности</option>
-                        <option value="По алфавиту">По алфавиту</option>
-                    </select>
+                    <p class="sorting__popularity sorting__popularity--active">популярности</p>
+                    <p class="sorting__alphabet">алфавиту</p>
                 </div>
                 <div class="cities-block" id="all-cities">
                     <div class="cities-block__city" data-popularity="1">
@@ -258,7 +255,7 @@
                     <div class="cities-block__city" data-popularity="20">
                         <a href="html/washington-dc.html">
                             <img class="cities-block__flag" src="image/flags/Flag_of_Washington,_D.C-min.svg" alt="флаг Вашингтон округ Колумбия">
-                            Вашингтон, округ Колумбия
+                            Вашингтон
                         </a>
                     </div>
                     <div class="cities-block__city" data-popularity="7">
