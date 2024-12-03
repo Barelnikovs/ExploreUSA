@@ -428,9 +428,12 @@
         .cities-block {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
+            margin-bottom: 40px;
             @media (width >= $breakpoint_sm) {
+                margin-bottom: 50px;
             }
             @media (width >= $breakpoint_md) {
+                margin-bottom: 60px;
             }
             @media (width >= $breakpoint_xl) {
                 grid-template-columns: repeat(3, 1fr);
@@ -438,7 +441,7 @@
             @media (width >= $breakpoint_xxl) {
                 grid-template-columns: repeat(4, 1fr);
                 width: 75%;
-                margin: 0 auto;
+                margin: 0 auto 80px;
             }
             &__city {
                 margin-bottom: 10px;

@@ -515,6 +515,17 @@
 .main .selectCity .cities-block {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  margin-bottom: 40px;
+}
+@media (width >= 540px) {
+  .main .selectCity .cities-block {
+    margin-bottom: 50px;
+  }
+}
+@media (width >= 767px) {
+  .main .selectCity .cities-block {
+    margin-bottom: 60px;
+  }
 }
 @media (width >= 1024px) {
   .main .selectCity .cities-block {
@@ -525,7 +536,7 @@
   .main .selectCity .cities-block {
     grid-template-columns: repeat(4, 1fr);
     width: 75%;
-    margin: 0 auto;
+    margin: 0 auto 80px;
   }
 }
 .main .selectCity .cities-block__city {
