@@ -1,6 +1,5 @@
 const banner = document.getElementById('banner')
 const title = document.title
-console.log(title)
 
 const images = ['./image/banner/Atlanta.jpg',
      './image/banner/Boston.jpg',
@@ -23,7 +22,7 @@ const images = ['./image/banner/Atlanta.jpg',
                       './image/banner/Seattle.jpg',
                        './image/banner/Washington_DC.jpg', ]
 const randomImage = Math.floor(Math.random() * images.length)
-const linearGradient = 'linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2), transparent, transparent, transparent), '
+const linearGradient = window.innerWidth <= 1200 ? 'linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2), transparent, transparent, transparent), ' : '' ;
 switch (title) {
      case 'Explore USA main': {
           banner.style.background = `${linearGradient}url(${images[randomImage]})`

@@ -1,6 +1,6 @@
 'use strict'
 
-const inputInSearchPlace = document.getElementById('inputInSearchPlace')
+const crossInHeader = document.querySelector('#crossInHeader')
 
 /* вспомогательные функции */
 const body = document.querySelector('BODY')
@@ -31,6 +31,8 @@ function openSearchInHeader() { // открытие строки поиска
 function closeSearchInHeader() { // закрытие строки поиска
     turnOffHiddenModul()
     searchPlaceInHeader.classList.add('hidden')
+    inputInHeader.value = ''
+    resultsOfLiveSearch.classList.add('hidden')
 }
 
 
@@ -39,6 +41,8 @@ const burgerMenu = document.getElementById('burgerMenu')
 const crossInNavigation = document.getElementById('navigationCross')
 const searchInHeader = document.getElementById('searchInHeader')
 const crossInSearchPlace = document.getElementById('crossInSearchPlace')
+const inputInHeader = document.querySelector('#inputInHeader')
+const resultsOfLiveSearch = document.querySelector('#resultsOfLiveSearch')
 
 burgerMenu.addEventListener('click', function() { 
     openNavigation()
@@ -54,15 +58,40 @@ crossInNavigation.addEventListener('click', function() {
 })
 searchInHeader.addEventListener('click', function() { 
     openSearchInHeader()
+    inputInHeader.focus()
     darkBackground.addEventListener('click', function() {
         closeSearchInHeader() 
     })
 })
-crossInSearchPlace.addEventListener('click', function() { 
+crossInHeader.addEventListener('click', function() { 
     closeSearchInHeader()
     darkBackground.removeEventListener('click', function() {
         closeSearchInHeader() 
     })
+})
+
+/* Живой поиск в хедере */
+inputInHeader.addEventListener('input', function () {
+    let val = this.value.trim().toLowerCase()
+    let citiesInSearch = document.querySelectorAll('.search__city')
+    let count = 0
+    if (val.length >= 1) {
+        citiesInSearch.forEach((city) => {
+            if (city.innerText.toLowerCase().includes(val)) {
+                if (count < 8) {
+                    city.classList.remove('hidden')
+                    count++
+                } else {
+                    city.classList.add('hidden')
+                }
+            } else {
+                city.classList.add('hidden')
+            }
+        })
+        resultsOfLiveSearch.classList.remove('hidden')
+    } else {
+        resultsOfLiveSearch.classList.add('hidden')
+    }
 })
 
 /* плавный скроллинг */
@@ -93,3 +122,38 @@ function toggleCitiesInNavigation() {
 }
 toggleCitiesInNavigation()
 window.addEventListener('resize', toggleCitiesInNavigation)
+
+
+/* Сортировка городов */
+const buttonSortByPopularity = document.querySelector('#sort-popular')
+const buttonSortByAlphabet = document.querySelector('#sort-alphabet')
+const parantOfCities = document.querySelector('#all-cities')
+const childrenCities = parantOfCities.children
+
+buttonSortByPopularity.addEventListener('click', sortByPopularity)
+function sortByPopularity() {
+    buttonSortByPopularity.classList.add('sorting__popularity--active')
+    buttonSortByAlphabet.classList.remove('sorting__alphabet--active')
+    let citiesArray = Array.from(childrenCities);
+    citiesArray.sort((a, b) => {
+        return Number(a.dataset.popularity) - Number(b.dataset.popularity);
+    });
+    parantOfCities.innerHTML = '';
+    citiesArray.forEach(city => {
+        parantOfCities.appendChild(city);
+    });
+}
+    sortByPopularity()
+buttonSortByAlphabet.addEventListener('click', sortByAlphabet)
+function sortByAlphabet() {
+    buttonSortByPopularity.classList.remove('sorting__popularity--active')
+    buttonSortByAlphabet.classList.add('sorting__alphabet--active')
+    let citiesArray = Array.from(childrenCities);
+    citiesArray.sort((a, b) => {
+        return Number(a.dataset.alphabet) - Number(b.dataset.alphabet);
+    });
+    parantOfCities.innerHTML = '';
+    citiesArray.forEach(city => {
+        parantOfCities.appendChild(city);
+    });
+}

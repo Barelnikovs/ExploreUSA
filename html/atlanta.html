@@ -7,7 +7,6 @@
     <title>Атланта штат Джорджия</title>
     <link rel="icon" type="image/png" href="image/favicon.png">
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/city.css">
     <script defer src="../js/script.js"></script>
     <script defer src="../js/loadBanner.js"></script>
     
@@ -29,10 +28,6 @@
                     <div>
                         <img src="../image/navigation/photo-svgrepo-com.svg" alt="иконка США">
                         <a href="#photo">Фотографии</a>
-                    </div>
-                    <div>
-                        <img src="../image/navigation/united-states-map-usa-america-svgrepo-com.svg" alt="иконка США">
-                        <a href="#USACities">Города США</a>
                     </div>
                     <div class="icons-navigation__nav-cross" id="navigationCross"></div>
                 </div>
@@ -165,12 +160,99 @@
                     <span>Explore USA</span>
                 </a>
             </div>
+            <div class="name-and-slogan">
+                <h1>Атланта</h1>
+                <h2>Штат Джорджия</h2>
+            </div>
             <div class="search">
                 <img id="searchInHeader" src="../image/search/icons8-search-48.svg" alt="search the site">
                 <div class="search__wrapper hidden" id="searchPlaceInHeader">
-                    <input class="search__input" id="inputInSearchPlace" type="text" placeholder="Что ищем?">
-                    <div class="search__cross" id="crossInSearchPlace"></div>
-                    <div class="search__results hidden"></div>
+                    <input class="search__input" id="inputInHeader" type="text" placeholder="Что ищем?">
+                    <div class="search__cross" id="crossInHeader"></div>
+                    <div class="search__results hidden" id="resultsOfLiveSearch">
+                        <div>
+                            <a class="search__city" href="html/new-york.html">
+                                <img class="cities-block__flag" src="../image/flags/Flag_of_New_York_City-min.svg" alt="флаг Нью-йорк">
+                                Нью-Йорк
+                            </a>
+                            <a class="search__city" href="html/los-angeles.html">
+                                <img class="cities-block__flag" src="../image/flags/Flag_of_Los_Angeles,_California-min.svg" alt="флаг Лос-Анджелес">
+                                Лос-Анджелес
+                            </a>
+                            <a class="search__city" href="html/chicago.html">
+                                <img class="cities-block__flag" src="../image/flags/Flag_of_Chicago,_Illinois-min.svg" alt="флаг Чикаго">
+                                Чикаго
+                            </a>
+                            <a class="search__city" href="html/houston.html">
+                                <img class="cities-block__flag" src="../image/flags/Flag_of_Houston,_Texas-min.svg" alt="флаг Хьюстон">
+                                Хьюстон
+                            </a>
+                            <a class="search__city" href="html/phoenix.html">
+                                <img class="cities-block__flag" src="../image/flags/Flag_of_Phoenix,_Arizona-min.svg" alt="флаг Феникс">
+                                Феникс
+                            </a>
+                            <a class="search__city" href="html/philadelphia.html">
+                                <img class="cities-block__flag" src="../image/flags/Flag_of_Philadelphia,_Pennsylvania-min.svg" alt="флаг Филадельфия">
+                                Филадельфия
+                            </a>
+                            <a class="search__city" href="html/san-antonio.html">
+                                <img class="cities-block__flag" src="../image/flags/Flag_of_San_Antonio,_Texas-min.svg" alt="флаг Сан-Антонио">
+                                Сан-Антонио
+                            </a>
+                            <a class="search__city" href="html/san-diego.html">
+                                <img class="cities-block__flag" src="../image/flags/Flag_of_San_Diego,_California-min.svg" alt="флаг Сан-Диего">
+                                Сан-Диего
+                            </a>
+                            <a class="search__city" href="html/dallas.html">
+                                <img class="cities-block__flag" src="../image/flags/Flag_of_Dallas-min.svg" alt="флаг Даллас">
+                                Даллас
+                            </a>
+                            <a class="search__city" href="html/san-jose.html">
+                                <img class="cities-block__flag" src="../image/flags/Flag_of_San_José,_California-min.svg" alt="флаг Сан-Хосе">
+                                Сан-Хосе
+                            </a>
+                            <a class="search__city" href="html/san-francisco.html">
+                                <img class="cities-block__flag" src="../image/flags/Flag_of_San_Francisco-min.svg" alt="флаг Сан-Франциско">
+                                Сан-Франциско
+                            </a>
+                            <a class="search__city" href="html/seattle.html">
+                                <img class="cities-block__flag" src="../image/flags/Flag_of_Seattle,_Washington_(1943–1963).gif" alt="флаг Сиэтла">
+                                Сиэтл
+                            </a>
+                            <a class="search__city" href="html/washington-dc.html">
+                                <img class="cities-block__flag" src="../image/flags/Flag_of_Washington,_D.C-min.svg" alt="флаг Вашингтон округ Колумбия">
+                                Вашингтон
+                            </a>
+                            <a class="search__city" href="html/boston.html">
+                                <img class="cities-block__flag" src="../image/flags/Flag_of_Boston-min.svg" alt="флаг Бостона">
+                                Бостон
+                            </a>
+                            <a class="search__city" href="html/detroit.html">
+                                <img class="cities-block__flag" src="../image/flags/Flag_of_Detroit-min.svg" alt="флаг Детроита">
+                                Детройт
+                            </a>
+                            <a class="search__city" href="html/atlanta.html">
+                                <img class="cities-block__flag" src="../image/flags/Flag_of_Atlanta-min.svg" alt="флаг Атланты">
+                                Атланта
+                            </a>
+                            <a class="search__city" href="html/miami.html">
+                                <img class="cities-block__flag" src="../image/flags/Flag_of_Miami,_Florida-min.svg" alt="флаг Майами">
+                                Майами
+                            </a>
+                            <a class="search__city" href="html/minneapolis.html">
+                                <img class="cities-block__flag" src="../image/flags/Flag_of_Minneapolis-min.svg" alt="флаг Миннеаполиса">
+                                Миннеаполис
+                            </a>
+                            <a class="search__city" href="html/new-orlean.html">
+                                <img class="cities-block__flag" src="../image/flags/Flag_of_New_Orleans,_Louisiana-min.svg" alt="флаг Нового Орлеана">
+                                Новый Орлеан
+                            </a>
+                            <a class="search__city" href="html/las-vegas.html">
+                                <img class="cities-block__flag" src="../image/flags/Flag_of_Las_Vegas,_Nevada-min-cropped.svg" alt="флаг Лас-Вегаса">
+                                Лас-Вегас
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </header>
@@ -179,7 +261,7 @@
                 <a class="scroll-menu__back" href="../index.html">На главную</a>
                 <span>|</span>
                 <a class="scroll-menu__location" href="./atlanta.html">Атланта:</a>
-                <a href="#aboutCity">О городе</a>
+                <a href="#discription">О городе</a>
                 <a href="#photo">Фотографии</a>
                 <a href="#comments">Комментарии</a>
             </section>
@@ -188,7 +270,7 @@
                 <h2>Штат Джорджия</h2>
             </section>
             <section class="city-info">
-                <div class="discription">
+                <div class="discription" id="discription">
                     <p>Атланта, расположенная в самом сердце юго-востока США, является ярким и динамичным городом, который привлекает туристов со всего мира. Этот мегаполис, являющийся столицей штата Джорджия, удобно расположен всего в нескольких часах езды от побережья Атлантического океана и гор Аппалачей, что делает его идеальной отправной точкой для изучения региона.</p>
                     <p>Атланта славится своим богатым историческим наследием. Здесь находится Мартин Лютер Кинг-младший Национальный исторический парк, где вы сможете узнать о жизни и борьбе за гражданские права. Не упустите возможность посетить аквариум Джорджии — один из крупнейших в мире, где вас ждут захватывающие морские существа.</p>
                     <p>Город предлагает множество развлекательных возможностей: от живой музыкальной сцены до уникальных гастрономических впечатлений. Попробуйте знаменитый жареный куриный филе или насладитесь местным барбекю в одном из уютных ресторанов.</p>

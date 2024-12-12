@@ -13,7 +13,6 @@
 @media (width >= 1200px) {
   .scroll-menu {
     height: 100px;
-    margin-bottom: -45px;
   }
 }
 .scroll-menu a {
@@ -149,9 +148,9 @@
     width: 60%;
   }
 }
-@media (width >= 1024px) {
+@media (width >= 1200px) {
   .form-and-comments .form {
-    width: 40%;
+    width: 35%;
   }
 }
 .form-and-comments .form * {
@@ -249,9 +248,9 @@
     width: 60%;
   }
 }
-@media (width >= 1024px) {
+@media (width >= 1200px) {
   .form-and-comments .comments-block {
-    width: 40%;
+    width: 35%;
   }
 }
 .form-and-comments .comments-block .counter-wrap {
@@ -344,6 +343,7 @@
   width: 50%;
   padding: 0 10px 0 10px;
   border-right: 1px solid #143434;
+  cursor: default;
 }
 @media (width >= 1200px) {
   .form-and-comments .comments-block .comment .likes-wrap__likes-counter {
@@ -354,10 +354,15 @@
   height: 20px;
   width: 20px;
   padding-bottom: 2px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
 }
 @media (width >= 1200px) {
   .form-and-comments .comments-block .comment .likes-wrap img {
     height: 30px;
     width: 30px;
   }
+}
+.form-and-comments .comments-block .comment .likes-wrap img:hover, .form-and-comments .comments-block .comment .likes-wrap img:active {
+  transform: scale(1.05);
 }/*# sourceMappingURL=city.css.map */
